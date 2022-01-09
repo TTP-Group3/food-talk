@@ -1,0 +1,18 @@
+.navbar{
+    height: 100px;
+    border: 2px inset pink;
+    background-color:aqua;
+}
+.btn{
+    margin:10px;
+    padding:4px;
+    border:2px dotted black;
+    float:right ;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.btn::after{
+    padding:3px;
+}
