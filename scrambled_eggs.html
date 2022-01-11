@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="foodTalk.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pageBackDrop" onclick="clickedBackDrop()"></div>
+    <div class="pageHeader">
+      <div class="headerTitle">
+        <h1>Food Talk</h1>
+      </div>
+      <div class="headerAccount">
+        <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+          Log In
+        </button>
+        <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+          Sign Up
+        </button>
+      </div>
+    </div>
+    <div class="sideMenu">
+      <div class="headerMenuBtn" onclick="showSideMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!--added menu options-->
+      <a href="" id="menuNavOptions"><h1>Home</h1></a>
+      <a href="" id="menuNavOptions"><h1>Breakfast</h1></a>
+      <a href="" id="menuNavOptions"><h1>Lunch</h1></a>
+      <a href="" id="menuNavOptions"><h1>Dinner</h1></a>
+      <a href="" id="menuNavOptions"><h1>Desert</h1></a>
+    </div>
+    <br /><br /><br /><br />
+    <!--need breaks or else the bar thing will hide some of the images/text-->
+    <div class="img_container">
+      <a
+        href="https://www.allrecipes.com/recipe/256653/on-the-farm-scrambled-eggs/"
+        target="_blank"
+        ><img
+          src="./scrambled_eggs.jpg"
+          alt="scrambled_eggs"
+          style="width: 44%; height: 340px; border-radius: 12px"
+      /></a>
+      <!--container for the ingredient section-->
+      <div class="ingredient_container">
+        <h2 style="text-align: center">Ingredients</h2>
+        <ul>
+          <li>4 eggs</li>
+          <li>1 tablespoon half-and-half</li>
+          <li>½ teaspoon salt, or to taste</li>
+          <li>½ teaspoon ground black pepper, or to taste</li>
+          <li>¼ cup crumbled goat cheese</li>
+          <li>1 tablespoon chopped fresh chives</li>
+          <li>1 tablespoon butter</li>
+          <li>2 dashes sriracha sauce (Optional)</li>
+        </ul>
+        <!--bottom link to site, can edit this later to change how it looks-->
+        <h2 style="text-align: center">
+          <a
+            href="https://www.allrecipes.com/recipe/256653/on-the-farm-scrambled-eggs/"
+            target="_blank"
+            class="site_link"
+            style="text-decoration: none"
+            >Follow recipe step by step</a
+          >
+        </h2>
+      </div>
+      <!--bottom food description section-->
+      <div id="food_description">
+        <h2>On-The-Farm Scrambled Eggs</h2>
+        <p>
+          Creamy scrambled eggs with chives and goat cheese create an earthy
+          flavor that will bring you to the farm. A dash of sriracha is your bus
+          ticket home if you need it. Serve with your favorite toast, and since
+          you are there, a slice or two of bacon.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="foodTalk.js"></script>
+</html>

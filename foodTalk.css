@@ -1,0 +1,153 @@
+.pageBackDrop {
+  position: fixed;
+  top: 0%; /* fill the gap */
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+  display: none;
+}
+.displayBackDrop {
+  display: block;
+}
+
+.pageHeader {
+  width: 100vw;
+  height: 60px;
+  background-color: #1f2628;
+  position: fixed;
+  top: 0;
+  left: 0; /*added to fix the white space*/
+  z-index: 9;
+  user-select: none;
+}
+
+.headerTitle {
+  height: 100%;
+  width: fit-content;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  color: #e2f9ff;
+}
+.headerTitle > h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
+
+.headerAccount {
+  width: 220px;
+  height: 100%;
+  float: right;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.headerAccount > button {
+  height: 40px;
+  width: 80px;
+  border: none;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  opacity: 0.5;
+  cursor: pointer;
+  outline: 0;
+}
+.headerAccount > button:hover {
+  background-color: #fffdd0;
+  opacity: 1;
+}
+
+/* Side Menu --------------------- */
+
+.sideMenu {
+  top: 0; /* added this so it fills the whole side up without blank space */
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  left: -300px;
+  z-index: 10;
+  transition: left 0.5s ease;
+
+  background-color: rgb(24, 22, 22);
+}
+.showSideMenu {
+  left: 0;
+}
+
+.headerMenuBtn {
+  width: 60px;
+  height: fit-content;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+  cursor: pointer;
+  position: absolute;
+  right: -60px;
+}
+.headerMenuBtn > div {
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 4.5px;
+}
+.headerMenuBtn:hover {
+  background-color: #ffffff;
+}
+.headerMenuBtn:hover > div {
+  background-color: black;
+}
+
+/* added this for menu options*/
+#menuNavOptions {
+  text-decoration: none;
+  color: #67ff2b;
+  padding: 8px 8px 8px 35px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#menuNavOptions:hover {
+  background-color: #303030;
+  opacity: 1;
+}
+
+.img_container {
+  margin: auto;
+  margin-left: 5%;
+}
+
+.ingredient_container {
+  background-color: white;
+  box-shadow: 0px 0px 8px 5px #e3e3e3;
+  border-radius: 12px;
+  width: 40%;
+  margin: auto;
+  margin-right: 5%;
+  padding: 2%;
+  float: right;
+  position: relative;
+  text-decoration: none;
+}
+
+#food_description {
+  box-shadow: 0px 0px 8px 5px #e3e3e3;
+  border-radius: 12px;
+  padding: 2%;
+  width: 40%;
+  margin: auto;
+  float: left;
+}
