@@ -1,0 +1,19 @@
+.main{
+    text-align: center;
+    overflow:hidden;
+}
+
+.recipe_pic{
+    height: auto;
+    float:left;
+    resize: horizontal;
+    max-width: 50%;
+}
+
+.recipe_ing{
+    text-align: left;
+    display:inline-block;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+
