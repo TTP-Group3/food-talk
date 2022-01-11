@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 40px
+}
+
+body{
+    margin: 0;
+    background-color: #f0fcff;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.pageBackDrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+    display: none;
+}
+.displayBackDrop{
+    display: block;
+}
+
+.pageHeader{
+    width: 100vw;
+    height: 60px;
+    background-color: #1f2628;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    user-select: none;
+}
+
+.headerTitle{
+    height: 100%;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    color: #e2f9ff;
+}
+.headerTitle > h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.headerAccount{
+    width: 220px;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+.headerAccount > button{
+    height: 40px;
+    width: 80px;
+    border: none;
+    background-color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+    outline: 0;
+}
+.headerAccount > button:hover{
+    background-color: #fffdd0;
+    opacity: 1;
+}
+
+/* Side Menu --------------------- */
+
+.sideMenu{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    left: -300px;
+    z-index: 10;
+    transition: left 0.5s ease;
+
+    background-color: rgb(24, 22, 22);
+}
+.showSideMenu{
+    left: 0;
+}
+
+.headerMenuBtn{
+    width: 60px;
+    height: fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+    position: absolute;
+    right: -60px;
+}
+.headerMenuBtn > div{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 4.5px;
+}
+.headerMenuBtn:hover{
+    background-color: #ffffff;
+}
+.headerMenuBtn:hover > div{
+    background-color: black;
+}
+
+#title{
+    font-size: 40px;
+    color: black;
+    float: right;
+    text-decoration-style:double;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 70px;
+    margin-right: 10%;
+}
+
+
+#ingredients{
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    margin-bottom: 80px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1%;
+}
+
+#mango{
+    margin-left: 10%;
+    width: 360px;
+}
+
+#p-title{
+    font-size: 35px;
+    color: black;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: 'Oswald', sans-serif;
+}
+
+#process{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.block{
+    margin-top: 80px;
+    padding: 2%;
+    background-color: rgb(252, 244, 173) ;
+    width: 1400px;
+}
+
+.block2{
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: rgb(248, 244, 204) ;
+    width: 1400px;
+}
+
+.block3{
+    width: 1400px;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: rgb(252, 251, 228) ;
+}
+
+#form{
+    size: 10px;
+    color: black;
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Oswald', sans-serif;
+}
+
+#c-title{
+    font-size: 30px;
+    color: black;
+    margin-left: 10%;
+    margin-top: 2%;
+    text-indent: 1%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.block3 input{
+    width: 600px;
+    height: 35px;
+    font-size: 18px;
+    text-indent: 5px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 6px;
+}
+
+.block3 textarea{
+    width: 610px;
+    height: 200px;
+    font-size: 18px;
+    text-indent: 5px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 10px;
+}
+
+.block3 button{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1%;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(171, 199, 240);
+}
+
+#form{
+    width: 1190px;
+}
+
+
+#name{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#email{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#comment{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+/*Jennifer*/
+
+#title-1{
+    font-size: 40px;
+    color: black;
+    float: right;
+    text-decoration-style:double;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 25px;
+    margin-right: 300px;
+}
+
+
+#macaron{
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 360px;
+}
+
+#ingredients-1{
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 2%;
+}
+
+.block-1{
+    margin-top: 80px;
+    padding: 2%;
+    width: 1400px;
+    background-color: rgb(248, 161, 161) ;
+}
+
+.block2-1{
+    margin-top: 10px;
+    margin-left: 95px;
+    margin-right: 95px;
+    margin-bottom: 20px;
+    padding: 2%;
+    width: 1400px;
+    background-color: rgb(255, 204, 204) ;
+}
+
+.block3-1{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding: 2%;
+    width: 1400px;
+    background-color: rgb(250, 232, 232) ;
+}
+
+
+.block3-1 input{
+    width: 600px;
+    height: 35px;
+    font-size: 18px;
+    text-indent: 5px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 6px;
+}
+
+.block3-1 textarea{
+    width: 610px;
+    height: 200px;
+    font-size: 18px;
+    text-indent: 5px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 10px;
+}
+
+.block3-1 button{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1%;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(171, 199, 240);
+}
+
+/* Rey */
+
+#title-2{
+    font-size: 40px;
+    color: black;
+    float: right;
+    text-decoration-style:double;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    margin-right: 400px;
+}
+
+.block-2{
+    padding: 2%;
+    background-color: rgb(170, 63, 63) ;
+    margin-bottom: 60px;
+    width: 1400px;
+    margin-top: 80px;
+}
+
+.block2-2{
+    margin-top: 10px;
+    margin-left: 95px;
+    margin-right: 95px;
+    margin-bottom: 20px;
+    padding: 2%;
+    width: 1400px;
+    background-color: rgb(187, 110, 110) ;
+}
+
+.block3-2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding: 2%;
+    width: 1400px;
+    background-color: rgb(212, 147, 147) ;
+}
+
+.block3-2 input{
+    width: 600px;
+    height: 35px;
+    font-size: 18px;
+    text-indent: 5px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 6px;
+}
+
+.block3-2 textarea{
+    width: 610px;
+    height: 200px;
+    font-size: 18px;
+    text-indent: 5px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 10px;
+}
+
+.block3-2 button{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1%;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(171, 199, 240);
+}
+
+#raspberry{
+    margin-top: 120px;
+    margin-right:200px;
+    width: 400px;
+}
+
+#ingredients-2{
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 200px;
+}
+
+/* Samy */
+
+#title-3{
+    font-size: 40px;
+    color: black;
+    float: right;
+    text-decoration-style:double;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 100px;
+    margin-right: 400px;
+}
+
+.block-3{
+    padding: 85px;
+    background-color: rgb(78, 150, 243) ;
+    margin-bottom: 60px;
+    padding: 2%;
+    width: 1400px;
+    margin-top: 80px;
+}
+
+.block2-3{
+    margin-top: 10px;
+    margin-left: 95px;
+    margin-right: 95px;
+    margin-bottom: 20px;
+    padding: 2%;
+    width: 1400px;
+    background-color: rgb(110, 169, 245) ;
+}
+
+.block3-3{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding: 2%;
+    width: 1400px;
+    background-color: rgb(167, 201, 247) ;
+}
+
+.block3-3 input{
+    width: 600px;
+    height: 35px;
+    font-size: 18px;
+    text-indent: 5px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 6px;
+}
+
+.block3-3 textarea{
+    width: 610px;
+    height: 200px;
+    font-size: 18px;
+    text-indent: 5px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 10px;
+}
+
+.block3-3 button{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1%;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(171, 199, 240);
+}
+
+#honey{
+    margin-top: 40px;
+    margin-left:160px;
+    width: 420px;
+}
+
+#ingredients-3{
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 240px;
+    margin-top: 60px;
+}
