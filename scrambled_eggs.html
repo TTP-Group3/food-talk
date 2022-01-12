@@ -60,6 +60,41 @@
           alt="scrambled_eggs"
           style="width: 44%; height: 340px; border-radius: 12px"
       /></a>
+      <!--bottom food description section-->
+      <div id="food_description">
+        <h2 id="Ingredient_head" style="text-align: center">
+          <span>On-The-Farm Scrambled Eggs</span>
+        </h2>
+        <p>
+          Creamy scrambled eggs with chives and goat cheese create an earthy
+          flavor that will bring you to the farm. A dash of sriracha is your bus
+          ticket home if you need it. Serve with your favorite toast, and since
+          you are there, a slice or two of bacon.
+        </p>
+        <img
+          id="heart"
+          onclick="changeHeart()"
+          class="heart_icon"
+          src="imgs/heart-regular.svg"
+          alt="heart icon"
+        />
+        <img
+          id="comment"
+          onclick="show_n_hide(); changeComment();"
+          class="comment_icon"
+          src="imgs/comment-regular.svg"
+          alt="comment icon"
+        />
+        <div id="dialog" style="display: none" class="comment_section">
+          <input
+            type="user_text"
+            id="comment_box"
+            placeholder="Enter comment"
+          />
+          <button id="postBtn">Post</button>
+          <ul id="unordered_list"></ul>
+        </div>
+      </div>
       <!--container for the ingredient section-->
       <div class="ingredient_container">
         <h2 style="text-align: center">Ingredients</h2>
@@ -83,16 +118,6 @@
             >Follow recipe step by step</a
           >
         </h2>
-      </div>
-      <!--bottom food description section-->
-      <div id="food_description">
-        <h2>On-The-Farm Scrambled Eggs</h2>
-        <p>
-          Creamy scrambled eggs with chives and goat cheese create an earthy
-          flavor that will bring you to the farm. A dash of sriracha is your bus
-          ticket home if you need it. Serve with your favorite toast, and since
-          you are there, a slice or two of bacon.
-        </p>
       </div>
     </div>
   </body>
