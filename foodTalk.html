@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Talk</title>
+        <link rel="stylesheet" href="foodTalk.css">
+
+        <!-- Fonts: -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <!-- LOGO LINK -->
+        <link rel="icon" href="images/FoodTalkLogo.png">
+
+    </head>
+    <body>
+        <div class="pageBackDrop" onclick="clickedBackDrop()"></div>
+        <div class="pageHeader">
+            <div class="headerTitle">
+                <h1>Food Talk</h1>
+            </div>
+            <div class="headerAccount">
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Log In</button>
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Sign Up</button>
+            </div>
+        </div>
+        <div class="sideMenu">
+            <div class="headerMenuBtn" onclick="showSideMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logo">
+                <img src="images/FoodTalkLogo.png">
+                
+            </div>
+            <!--menu item-->
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-utensils"></i></span>
+                        <span class="item">Recipes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <span class="item">Contact</span>
+                    </a>
+                </li>
+            </ul>                       
+        </div>
+        </div>
+        <div class="contentPreview">
+            <div class="previewText">
+                <p>We provide</p>
+                <h1 class="typeWriterPreview" data-period="2000" data-type='["Good Visuals"]'></h1>
+                <h1 class="typeWriterPreview" data-period="2000" data-type='["Good Smells"]'></h1>
+                <h1 class="typeWriterPreview" data-period="2000" data-type='["Good Tastes"]'></h1>
+                <h1 class="typeWriterPreview" data-period="2000" data-type='["Good Times"]'></h1>
+            </div>
+        </div>
+        <div class="filterContainer">
+            <div class="filterBanner">
+                <div></div>
+                <h1>What peaks your interest at this time?</h1>
+                <div></div>
+            </div>
+            <div class="filterBtns">
+                <button class="selectedFilter" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">All</button>
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Breakfast</button>
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Lunch</button>
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Dinner</button>
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Dessert</button>
+            </div>
+        </div>
+        <div class="recipeContainer">
+            <div class="recipeItem" id="recipe_1" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+                <div class="recipeRating">
+                    <img src="../images/ratingStar.png">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Filet Mignon</h1>
+                    <p class="recipeInfo">Hello there my name is Rey Flores</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="foodTalk.js"></script>
+</html>
