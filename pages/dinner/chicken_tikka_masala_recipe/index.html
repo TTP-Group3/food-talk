@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styling.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="pageHeader">
+      <div class="headerTitle">
+        <h1>Food Talk</h1>
+      </div>
+    </div>
+
+    <div class="food_container">
+        <img class="chicken_tikka_masala_img" style="margin-right: 250px;" src="imgs/chicken_tikka_masala.jpg" alt="img">
+        <div class="right-col">
+            <h1>Chicken Tikka Masala</h1>
+              <p><b><u> Ingredients </u></b><br>
+        <span>&#8226;</span>6 garlic cloves, finely grated.<br>
+        <span>&#8226;</span>4 tsp. finely grated peeled ginger.<br>
+        <span>&#8226;</span>4 tsp. ground turmeric<br>
+        <span>&#8226;</span>2 tsp. garam masala<br>
+        <span>&#8226;</span>2 tsp. ground coriander<br>
+        <span>&#8226;</span>2 tsp. ground cumin<br>
+        <span>&#8226;</span>1½ cups whole-milk yogurt (not Greek)<br>
+        <span>&#8226;</span>1 Tbsp. kosher salt<br>
+        <span>&#8226;</span>2 lb. skinless, boneless chicken breasts, halved lengthwise<br>
+        <span>&#8226;</span>3 Tbsp. ghee (clarified butter) or vegetable oil<br>
+        <span>&#8226;</span>1 small onion, thinly sliced<br>
+        <span>&#8226;</span>¼ cup tomato paste<br>
+        <span>&#8226;</span>6 cardamom pods, crushed<br>
+        <span>&#8226;</span>2 dried chiles de árbol or ½ tsp. crushed red pepper flakes<br>
+        <span>&#8226;</span>1 28-oz. can whole peeled tomatoes<br>
+        <span>&#8226;</span>2 cups heavy cream<br>
+        <span>&#8226;</span>¾ cup chopped cilantro, plus sprigs for garnish<br>
+        <span>&#8226;</span>Steamed basmati rice (for serving)<br>
+        </p>
+        </div>
+
+        <div id="dialog" style="display: none;" class="comment_section">
+          <input type="user_text" id="comment_box" placeholder="Enter comment">
+          <button id="postBtn">Post</button>
+          <ul id="unordered_list"></ul>
+        </div>
+    </div>
+    <div class="middle_container">
+      <div>
+     <button id="stepsBtn" onclick="show_n_hide2()"class="stepsBtnDesign">Steps</button>
+    </div>
+    <div>
+      <button id="tipsBtn" onclick="show_n_hide3()"class="tipsBtnDesign">Useful Tips</button>
+    </div>
+    <div>
+      <a href="#"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
+    </div>
+      <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
+      <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
+    </div>
+    <div class="flex_container">
+    <div id="steps" style="display: none;" class="steps_container">
+      <h1>Steps</h1>
+      <p><li>Step 1: Combine garlic, ginger, turmeric, garam masala, coriander, and cumin in a small bowl. 
+        Whisk yogurt, salt, and half of spice mixture in a medium bowl; add chicken and turn to coat.
+        Cover and chill 4-6 hours. Cover and chill remaining spice mixture.</li><br>
+        <li>Step 2: Heat ghee in a large heavy pot over medium heat. Add onion, tomato paste, cardamom, and chiles and 
+          cook, stirring often, until tomato paste has darkened and onion is soft, about 5 minutes. Add remaining
+          half of spice mixture and cook, stirring often, until bottom of pot begins to brown, about 4 minutes.</li><br>
+        <li>Step 3: Add tomatoes with juices, crushing them with your hands as you add them. Bring to a boil, reduce heat, 
+          and simmer, stirring often and scraping up browned bits from bottom of pot, until sauce thickens, 8-10 minutes.</li><br>
+        <li>Step 4: Add cream and chopped cilantro. Simmer, stirring occasionally, until sauce thickens, 30-40 minutes.</li><br>
+        <li>Step 5: Meanwhile, preheat broiler. Line a rimmed baking sheet with foil and set a wire rack inside sheet. 
+          Arrange chicken on rack in a single layer. Broil until chicken starts to blacken in spots (it will not be
+          ooked through), about 10 minutes.</li><br>
+        <li>Step 6: Cut chicken into bite-size pieces, add to sauce, and simmer, stirring occasionally, until chicken is 
+          cooked through, 8-10 minutes. Serve with rice and cilantro sprigs.</li><br>
+      </p>
+    </div>
+    <div id="tips" style="display: none;" class="tips_container">
+      <h1>Useful Tips</h1>
+      <p><li>Chicken can be made 2 days ahead. Cover; chill. Reheat before serving.</li><br>
+        <li>Passata creates a smooth tomato base.</li><br>
+        <li>Make sure the spices aren't too old.</li><br>
+        <li>Marinate to tenderise the meat.</li><br>
+        <li>Char the chicken for tandoori flavour.</li><br>
+    </p>
+    </div>
+  </div>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
