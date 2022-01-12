@@ -1,7 +1,10 @@
+/*import the font from google fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Open+Sans+Condensed:ital,wght@1,300&family=Roboto:wght@300&display=swap");
+/*style for background with gradient coloring*/
 body {
   background: linear-gradient(to bottom right, rgb(126, 52, 22), #dedace);
 }
+/*most of this is just the top title/menu bar*/
 .pageBackDrop {
   position: fixed;
   top: 0%; /* fill the gap */
@@ -70,7 +73,7 @@ body {
   opacity: 1;
 }
 
-/* Side Menu --------------------- */
+/* Side Menu --- probably won't use */
 
 .sideMenu {
   top: 0; /* added this so it fills the whole side up without blank space */
@@ -113,6 +116,7 @@ body {
 }
 
 /* added this for menu options*/
+/*probably useless atm or will not use at all but it stles the nagivagtion options*/
 #menuNavOptions {
   text-decoration: none;
   color: #67ff2b;
@@ -123,17 +127,17 @@ body {
   opacity: 0.6;
   transition: 0.3s;
 }
-
+/*small transition effect when hover over with mouse*/
 #menuNavOptions:hover {
   background-color: #303030;
   opacity: 1;
 }
-
+/*exactly as it is, style for the image container or image but not much*/
 .img_container {
   margin: auto;
   margin-left: 5%;
 }
-
+/*style for ingredient container listing the ingredients*/
 .ingredient_container {
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0px 0px 8px 5px #e3e3e3;
@@ -151,7 +155,7 @@ body {
   text-decoration: none;
   font-family: "Inconsolata", monospace;
 }
-
+/*style the header of the ingredient container*/
 #Ingredient_head > span {
   padding: 8px;
   border-radius: 8px;
@@ -160,7 +164,8 @@ body {
   /* should ingredient header be in span or h2 */
 }
 
-/* Summary */
+/* Summary or short description of the food, but its copy pasted 
+from the site I got it from in this case allrecipes.com*/
 #food_description {
   background-color: rgba(255, 255, 255, 0.15);
   color: white;
@@ -173,7 +178,7 @@ body {
   float: right;
   font-family: "Inconsolata", monospace;
 }
-
+/*style for the link to the site or button, however you want to call it*/
 .site_link {
   background: rgb(211, 200, 199);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
@@ -190,7 +195,7 @@ body {
   font-family: "Inconsolata", monospace;
   transition: 0.3s;
 }
-
+/*small transition of colors upon hovering over the link*/
 .site_link:hover {
   background-color: rgb(182, 69, 69);
   color: black;

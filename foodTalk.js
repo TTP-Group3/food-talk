@@ -1,9 +1,10 @@
 
+// expand the menu when click and show content
 function expandMenu(){
     contentMenu = document.getElementsByClassName("contentMenu")[0];
     contentMenu.classList.add("showContentMenu");
 }
-
+//display the menu and blue background when displayed
 function displayBackDrop(){
     var blur = document.getElementsByClassName("pageBackDrop")[0];
     
