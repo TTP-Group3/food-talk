@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Protein Pancake Recipe</title>
-    <link rel="stylesheet" href="breakfast.css" />
+    <title>Breakfast</title>
+    <link rel="stylesheet" href="{% static "style/breakfast.css" %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet"/>
@@ -22,14 +22,14 @@
     <!--need breaks or else the bar thing will hide some of the images/text-->
     <!-- Food image -->
     <div class="img_container">
-          <img src="imgs/protien-pancakes.jpg" alt="scrambled_eggs" style="width: 44%; height: 450px; border-radius: 12px"/></a>
-
+          <img src="{% static "images/recipes/protienPancakes.jpg" %}" alt="pancakes" style="width: 44%; height: 450px; border-radius: 12px"/></a>
+      
         <!--bottom food description section-->
       <div id="food_description">
         <h2 id="Ingredient_head" style="text-align: center">
           <span>Protein Pancakes</span>
         </h2>
-        <p>
+        <p style="margin-top: 5vh">
             What you feed your body in the morning will determine the type day you have.
             This quick, easy, and delicious protein pancake recipe will ensure you start of the day
             with the right amount of nutrients to power your day.
@@ -40,7 +40,7 @@
           id="heart"
           onclick="changeHeart()"
           class="heart_icon"
-          src="imgs/heart-regular.svg"
+          src="{% static "images/recipes/heart-regular.svg" %}"
           alt="heart icon"
         />
         <!-- adding comment image -->
@@ -48,7 +48,7 @@
           id="comment"
           onclick="show_n_hide(); changeComment();"
           class="comment_icon"
-          src="imgs/comment-regular.svg"
+          src="{% static "images/recipes/comment-regular.svg" %}"
           alt="comment icon"
         />
         <!-- pop comment section after click on comment -->
@@ -76,12 +76,12 @@
             <li>1 tablespoon of Flaxseeds (optional)</li>
         </ul>
         <!--bottom link to site, can edit this later to change how it looks-->
-        <h2 style="text-align: center">
+        <h2 style="text-align: center; margin-top:5vh">
           <a href="https://www.youtube.com/watch?app=desktop&v=B-AhoXbMmRM&feature=youtu.be" target="_blank" class="site_link" style="text-decoration: none">Follow Recipe</a>
         </h2>
       </div>
     </div>
   </body>
   <!-- Script -->
-  <script src="breakfast.js"></script>
+  <script src="{% static 'script/breakfast.js' %}"></script>
 </html>

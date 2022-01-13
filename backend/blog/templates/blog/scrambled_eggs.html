@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scrambled Eggs Recipe</title>
-    <link rel="stylesheet" href="breakfast.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style/breakfast.css' %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,7 +31,7 @@
         href="https://www.allrecipes.com/recipe/256653/on-the-farm-scrambled-eggs/"
         target="_blank"
         ><img
-          src="./scrambled_eggs.jpg"
+          src="{% static 'images/recipes/scrambledEggs.jpg' %}"
           alt="scrambled_eggs"
           style="width: 44%; height: 450px; border-radius: 12px"
       /></a>
@@ -41,7 +41,7 @@
           <span>On-The-Farm Scrambled Eggs</span>
         </h2>
         <!--this is completely copy pasted from the site description-->
-        <p>
+        <p style="margin-top: 5vh">
           Creamy scrambled eggs with chives and goat cheese create an earthy
           flavor that will bring you to the farm. A dash of sriracha is your bus
           ticket home if you need it. Serve with your favorite toast, and since
@@ -52,14 +52,14 @@
           id="heart"
           onclick="changeHeart()"
           class="heart_icon"
-          src="imgs/heart-regular.svg"
+          src="{% static 'images/recipes/heart-regular.svg' %}"
           alt="heart icon"
         />
         <img
           id="comment"
           onclick="show_n_hide(); changeComment();"
           class="comment_icon"
-          src="imgs/comment-regular.svg"
+          src="{% static 'images/recipes/comment-regular.svg' %}"
           alt="comment icon"
         />
         <!--comment section box thing-->
@@ -87,7 +87,7 @@
           <li>2 dashes sriracha sauce (Optional)</li>
         </ul>
         <!--bottom link to site, can edit this later to change how it looks-->
-        <h2 style="text-align: center">
+        <h2 style="text-align: center; margin-top: 5vh">
           <a
             href="https://www.allrecipes.com/recipe/256653/on-the-farm-scrambled-eggs/"
             target="_blank"
@@ -99,5 +99,5 @@
       </div>
     </div>
   </body>
-  <script src="breakfast.js"></script>
+  <script src="{% static 'script/breakfast.js' %}"></script>
 </html>

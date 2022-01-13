@@ -36,3 +36,5 @@ def sisig(request):
 def motehingar(request):
     return render(request, 'blog/motehingar.html')
 
+def scrambled_eggs(request):
+    return render(request, 'blog/scrambled_eggs.html')
