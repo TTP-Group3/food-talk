@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="{% static 'style/lunch.css' %}">
     </head>
     <body>
-        <div class="main">
+        {% include 'blog/header.html' %}
+        <div class="main" style="margin-top:80px;">
             <div class="recipe_pic">
                 <img src="{% static 'images/recipes/sizzling-crispy-sisig-recipe-.jpg' %}"> 
             </div>
