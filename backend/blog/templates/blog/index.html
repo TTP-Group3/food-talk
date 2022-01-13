@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Food Talk</title>
+        <link rel="stylesheet" href="{% static 'style/foodTalk.css' %}">
+
+        <!-- Fonts: -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        {% include 'blog/header.html' %}
+        <div class="contentPreview">
+            <div class="previewText">
+                <p>We provide</p>
+                <h1 class="typeWriterPreview" data-period="2000" data-type='["Good Visuals"]'></h1>
+                <h1 class="typeWriterPreview" data-period="2000" data-type='["Good Smells"]'></h1>
+                <h1 class="typeWriterPreview" data-period="2000" data-type='["Good Tastes"]'></h1>
+                <h1 class="typeWriterPreview" data-period="2000" data-type='["Good Times"]'></h1>
+            </div>
+        </div>
+        <div class="filterContainer">
+            <div class="filterBanner">
+                <div></div>
+                <h1>What peaks your interest at this time?</h1>
+                <div></div>
+            </div>
+            <div class="filterBtns">
+                <button class="selectedFilter" onclick="updateFilter(this)">All</button>
+                <button onclick="updateFilter(this)">Breakfast</button>
+                <button onclick="updateFilter(this)">Lunch</button>
+                <button onclick="updateFilter(this)">Dinner</button>
+                <button onclick="updateFilter(this)">Dessert</button>
+            </div>
+        </div>
+        <div class="recipeContainer">
+            <div class="recipeItem dessertRecipe" id="recipe_1" onclick="location.href='rasberry/'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Raspberry Souffle</h1>
+                    <p class="recipeInfo">Soufflé is a classic, delicious dessert recipes that requires some finesse to get right. While cheese soufflés and chocolate soufflés are commonplace, Chef Gordon Ramsay creates a version that showcases a raspberry mixture paired with a decadent cream for the perfect homemade raspberry soufflé.</p>
+                </div>
+            </div>
+            <div class="recipeItem dinnerRecipe" id="recipe_2" onclick="location.href='pastelon/'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Pastelón</h1>
+                    <p class="recipeInfo">Pastelón is a classic Puerto Rican dish made with layers of thinly-sliced plantains, ground beef, and cheese! Think of it as a Puerto Rican version of lasagna. It's the perfect casserole to make for a potluck or family gathering.</p>
+                </div>
+            </div>
+            <div class="recipeItem dessertRecipe" id="recipe_3" onclick="location.href='honey/'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Baklava</h1>
+                    <p class="recipeInfo">Baklava is a traditional pastry dessert that is known for its sweet, rich flavor and flaky texture. It's recipes</p>
+                </div>
+            </div>
+            <div class="recipeItem lunchRecipe" id="recipe_4" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Perfect Lasagna</h1>
+                    <p class="recipeInfo">classic recipe of one of the most loved foods in the world. The ultimate comfort food = homemade lasagna. Family and friends gather around the dinner table at any time for this lasagna recipe. A big warm comforting hug within layers of pasta, tomato sauce, white sauce and melted cheese!</p>
+                </div>
+            </div>
+            <div class="recipeItem dessertRecipe" id="recipe_5" onclick="location.href='mango/'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Mango Pomelo Sago Pudding</h1>
+                    <p class="recipeInfo">A refreshing, fruity and coconut-based dessert, Mango Pomelo Sago Pudding is chilled, lightly sweet, full of mango flavour and chewy due to the presence of small tapioca or sago pearls. It's a great way to cool down on a hot summer day.</p>
+                </div>
+            </div>
+            <div class="recipeItem breakfastRecipe" id="recipe_6" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">On-the-farm Scrambled Eggs</h1>
+                    <p class="recipeInfo">Creamy scrambled eggs with chives and goat cheese create an earthy flavor that will bring you to the farm. A dash of sriracha is your bus ticket home if you need it. Serve with your favorite toast, and since you are there, a slice or two of bacon.</p>
+                </div>
+            </div>
+            <div class="recipeItem dessertRecipe" id="recipe_7" onclick="location.href='macaron/'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">French Macarons</h1>
+                    <p class="recipeInfo">These French macarons make a very special treat to give your friends and family. They also look pretty on a plate for guests to indulge in when they come over. They can definitely be finicky but once you learn how to make macarons you’ll be hooked!
+
+                    </p>
+                </div>
+            </div>
+            <div class="recipeItem dinnerRecipe" id="recipe_8" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Spaghetti Carbonara</h1>
+                    <p class="recipeInfo">This dish is a deli egg-bacon-and-cheese-on-a-roll that has been pasta-fied, fancified, fetishized and turned into an Italian tradition that, like many inviolate Italian traditions, is actually far less old than the Mayflower.</p>
+                </div>
+            </div>
+            <div class="recipeItem dinnerRecipe" id="recipe_9" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Black Mushroom Rice</h1>
+                    <p class="recipeInfo">The famous Black Mushroom Rice (Black Rice with Djon-Djon or Riz Djon Djon) is a traditional Haitian dish. This rice is commonly served with meat, poultry, or seafood dishes, specializing in Haitian culinary culture.</p>
+                </div>
+            </div>
+            <div class="recipeItem dessertRecipe" id="recipe_10" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Protein Pancakes</h1>
+                    <p class="recipeInfo">Start your day with this Healthy Protein Pancakes Recipe! These simple, three-minute cakes are loaded with protein and other healthy ingredients and are perfect for yourself or a crowd.</p>
+                </div>
+            </div>
+            <div class="recipeItem dinnerRecipe" id="recipe_11" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Chiken Tikka Masala</h1>
+                    <p class="recipeInfo">For this chicken tikka masala recipe, the yogurt helps tenderize the chicken; the garlic, ginger, and spices in the marinade infuse it with lots of flavor. This is part of BA's Best, a collection of our essential recipes.</p>
+                </div>
+            </div>
+            <div class="recipeItem lunchRecipe" id="recipe_12" onclick="location.href='burger/'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Chicken Burger</h1>
+                    <p class="recipeInfo">The famous Black Mushroom Rice (Black Rice with Djon-Djon or Riz Djon Djon) is a traditional Haitian dish. This rice is commonly served with meat, poultry, or seafood dishes, specializing in Haitian culinary culture.</p>
+                </div>
+            </div>
+            <div class="recipeItem lunchRecipe" id="recipe_13" onclick="location.href='caldereta/'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Chicken Caldereta</h1>
+                    <p class="recipeInfo">The famous Black Mushroom Rice (Black Rice with Djon-Djon or Riz Djon Djon) is a traditional Haitian dish. This rice is commonly served with meat, poultry, or seafood dishes, specializing in Haitian culinary culture.</p>
+                </div>
+            </div>
+            <div class="recipeItem lunchRecipe" id="recipe_14" onclick="location.href='sisig/'">
+                <div class="recipeRating">
+                    <img src="{% static 'images/indexContent/ratingStar.png' %}">
+                    <h1>4.5</h1>
+                </div>
+                <div class="recipeDescr">
+                    <h1 class="recipeName">Sisig</h1>
+                    <p class="recipeInfo">The famous Black Mushroom Rice (Black Rice with Djon-Djon or Riz Djon Djon) is a traditional Haitian dish. This rice is commonly served with meat, poultry, or seafood dishes, specializing in Haitian culinary culture.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="{% static 'script/foodTalk.js'' %}"></script>
+</html>
+
+<!-- This entire webpage, including html,css, and javascript was designed and developed by Rey Hector Flores Hernandez -->

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loginContainer{
+    width: 400px;
+    height: 600px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    background-color: black;
+    position: relative;
+}
+
+.logoCont{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+}
+.logoCont img{
+    width: 320px;
+    height: auto;
+}
+
+.loginForm{
+    width: 100%;
+    height: 300px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.loginForm input{
+    width: 230px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    outline: none;
+    padding: 0 10px;
+    font-size: 20px;
+    background-color: rgb(14, 179, 255);
+}
+
+.usernameCont{
+    width: 250px;
+    height: 80px;
+    margin-top: 20px;
+}
+.passwordCont{
+    width: 250px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.loginForm button{
+    height: 40px;
+    width: 90px;
+    background-color: rgb(14, 179, 255);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px auto 0 auto;
+}
+
+.signupText{
+    position: absolute;
+    bottom: 6px;
+    font-size: 20px;
+}
+.signupText span{
+    color: rgb(14, 179, 255);
+    cursor: pointer;
+}

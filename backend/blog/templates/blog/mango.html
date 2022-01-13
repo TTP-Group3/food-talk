@@ -1,0 +1,87 @@
+{% load static %}
+<html>
+    <link rel="stylesheet" href="{% static 'style/dessert.css' %}">
+    <body>
+        <div class="pageBackDrop" onclick="clickedBackDrop()"></div>
+        <div class="pageHeader">
+            <div class="headerTitle">
+                <h1>Food Talk</h1>
+            </div>
+            <div class="headerAccount">
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Log In</button>
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Sign Up</button>
+            </div>
+        </div>
+        <div class="sideMenu">
+            <div class="headerMenuBtn" onclick="showSideMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+
+    <div class="block">
+        <p id= "title"> Mango Pomelo Sago Pudding</p>
+
+    <img id = "mango" src ="{% static 'images/recipes/mango.jpg' %}" style= "float:left"> 
+    
+    <p id = "ingredients" style="float:right">
+        <!--insert ingredients here-->
+        Ingredients:<br><br>
+        
+        3 Mangos <br>
+        1/2 Pomelo ( optional ) <br>
+        200 ml Coconut Milk/ canned full-fat coconut milk (for a richer flavor)<br>
+        300 ml milk <br>
+        150 ml Drinking Water <br> 
+        60 g Suagr <br>
+        100 g sago / tapioca pearls <br> 
+        Some Ice <br> <br>
+    </p>
+</div>
+<div class = "block2">
+    <h3 id = "p-title">Process</h3>
+
+    <p id="process">
+
+        1. Cook Sago/tapioca pearls: <br>
+            In a pot with water, leave it to a boiling point. Once that is done,
+            insert the sago/tapioca pearls into the pot. Cover the pot and stir it intermittently
+            until it looks transpaerent.
+            This should take for about 15 - 20 min.
+            <br>
+            Drain it and mix it with coconut milk and put it in the fridge 
+            <br><br>
+        2. Mixing Ingredients: <br>
+            In another pot, have the sugar, milk, coconut milk, and water (150 ml) 
+            mixed together. Bring it to a boil and stop right there. 
+            Place it into the fridge for fast cooling. <br><br>
+        3. Make the Mango Pureé:<br>
+            Blend the mangoes, your mixed ingredients, and the ice in a high-powdered
+            blender smooth.  <br>
+        (Optional: You can add more sugar for more sweetness)<br><br>
+        4. How to Assemble:<br>
+            Place your blended mango into a glass. <br>
+            Layer it with the mixed sago/tapioca pearls. <br>
+            Top it off with some diced mangoes, pomelo segments. ( You may add more
+            coconut milk if you wish ) <br><br>       
+    </p>
+    </div>
+
+<div class = "block3">
+    <p id = "c-title">Like it? Share your thoughts with us!</p>
+    <form action = "#" id = "form">
+        <p id = "name" style = "float: left">User name</p><br>
+        <input type = "text" name = "name" placeholder=" "><br>
+        <p id = "email" style = "float: left">Email</p><br>
+        <input type = "email" name = "email" placeholder=" "><br>
+        <p id = "comment" style = "float: left">Comment</p><br>
+        <textarea name = "comment" placeholder=" "></textarea>
+        <br>
+        <button type = "submit">submit</button>
+    </form>
+</div>
+    <script src="{% static 'script/dessert.js' %}"></script>
+</html>
+

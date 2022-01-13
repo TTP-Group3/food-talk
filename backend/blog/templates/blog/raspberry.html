@@ -1,0 +1,111 @@
+{% load static %}
+<html>
+    <link rel="stylesheet" href="{% static 'style/dessert.css' %}">
+    <body>
+        {% include 'blog/header.html' %}
+
+    <div class="block-2">
+        <p id= "title-2"> Raspberry Souffle</p>
+
+    <img id = "raspberry" src ="{% static 'images/recipes/raspberry.jpeg' %}" style= "float:left"> 
+    
+    <p id = "ingredients-2" style="float:right">
+        <!--insert ingredients here-->
+        Ingredients:<br><br>
+        
+        Raspberry Purée (Coulis)<br>
+
+
+600 grams fresh or frozen raspberries <br>
+
+6 Tablespoons granulated sugar <br>
+
+6 Tablespoons water <br><br>
+
+Pastry Cream:<br><br>
+
+
+600 grams fresh or frozen raspberries <br>
+
+6 Tablespoons granulated sugar<br>
+
+6 Tablespoons water<br>
+
+500 grams whole milk<br>
+
+65 grams large egg yolks<br>
+
+62 grams sugar<br>
+
+50 grams cornstarch<br>
+
+5 grams vanilla extract<br><br>
+
+Soufflés:<br><br>
+
+
+2 each 10-ounce ramekins or 4 each 6-ounce ramekins<br>
+
+100 grams raspberry purée<br>
+
+40 grams pastry cream<br>
+
+210 grams large egg whites<br>
+
+45 grams granulated sugar<br>
+
+1 lemon wedge<br>
+
+1 stick softened, room temperature butter<br>
+
+Shaved dark chocolate to coat<br>
+    </p>
+</div>
+
+
+<div class = "block2-2">
+    <h3 id = "p-title">Process</h3>
+
+    <p id="process">
+
+        1. To Make Raspberry Purée (Coulis) <br><br>
+        Add all of the ingredients into a medium saucepot over medium-low heat, cover with a lid and steam the berries for 5 to 8 minutes to allow them to break down. Remove the lid and continue to cook the berries to evaporate the excess water that was released during steaming. Let the mixture reduce for about 5 minutes or until the liquid <br> turns into a syrupy consistency. Do not let the liquid brown.
+        
+        Pour the cooked berry mixture into a blender and blend on low speed, gradually turning up to high speed for one minute. The result should be an evenly-blended almost jam-like consistency. <br>
+        
+        Take a medium size sieve and place over a bowl. Pour the raspberry purée into the sieve and pass through with a rubber spatula. Reserve 100 grams of the purée and chill for the soufflé base. Keep the remaining purée warm or room temperature for the soufflé garnish. <br>
+            <br><br>
+        2. To Make Pastry Cream <br><br>
+            <br><br>
+        3. To Make Soufflés<br><br>
+        Brush a thin layer of butter onto the inside bottom of the prepared ramekins and vertically along the sides. Chill the ramekins for a minimum of 30 seconds to let the butter set. Brush on another thin layer of butter, add shaved chocolate into the ramekins, and roll them in your hands so the chocolate shavings can tumble around the inside of the ramekins to coat the sides evenly. Pour any excess shaved chocolate into the next ramekin and repeat until all four are coated. Place ramekins in the refrigerator to cool while making the soufflé batter.
+        <br>
+        Preheat the oven to 355F. In a medium sized bowl, whisk together the pastry cream and raspberry purée until very well incorporated. In a stand mixer fitted with a whisk attachment, begin whisking the egg whites at medium speed. Once they begin to foam, squeeze a small amount of lemon juice as the whites are still whisking. When the volume of the egg whites has increased by ⅔, gradually begin to stream the sugar. Tap the bowl of sugar with your finger to control the amount of the sugar that is poured in. Increase the speed to medium-high and continue whisking the meringue until it forms stiff peaks and is bright white and glossy. To make sure the top center of the meringue is whipped to the right consistency, turn the speed of the machine back to medium, unlock the safety lock, carefully lift the arm of the mixer up 1 to 2 inches, and hold it in this place for 30 seconds. Lower the arm back down and whip for another 10 seconds.
+        <br>
+        Fold in a third of the meringue into the medium bowl with the pastry cream and raspberry purée mixture, until fully smooth and incorporated. Gently fold the remaining meringue into the mixture in two parts. The volume will decrease slightly but be careful not to let too much air out
+of the meringue.<br>
+Fill the ramekins to the top, tap lightly on a flat countertop to even out the batter. Using an offset spatula, scrape the tops of the soufflés flat. Clean off any excess batter off the outside of the ramekins. Finally, place your thumb on the inside edge of the ramekin, push about ⅙ inch down into the edge of the souffle batter, and rotate the ramekin in your other hand as you drag your thumb to wipe a small amount of batter from the edge. This is another trick to ensure your soufflé will rise straight up.<br>
+Place no more than two ramekins on a sheet tray at a time and bake in the center rack. If using 10-ounce ramekins, bake for 14 to 17 minutes, or until the tops of the soufflés are golden brown. If using 6-ounce ramekins, bake for 10-12 minutes.<br><br>
+
+        4. To Finish<br><br>
+        Dust with powdered sugar, place a fresh raspberry in the center and serve. For a more formal presentation, dust with powdered sugar, poke two holes into the center soufflé with a small spoon, and pour in fresh raspberry coulis in just before serving.<br><br>       
+    </p>
+    </div>
+
+    <div class = "block3-2">
+        <p id = "c-title">Like it? Share your thoughts with us!</p>
+        <form action = "#" id = "form">
+            <p id = "name" style = "float: left">User name</p><br>
+            <input type = "text" name = "name" placeholder=" "><br>
+            <p id = "email" style = "float: left">Email</p><br>
+            <input type = "email" name = "email" placeholder=" "><br>
+            <p id = "comment" style = "float: left">Comment</p><br>
+            <textarea name = "comment" placeholder=" "></textarea>
+            <br>
+            <button type = "submit">submit</button>
+        </form>
+    </div>
+    <script src="{% static 'script/dessert.js' %}"></script>
+    </body>
+</html>
+

@@ -1,1 +1,2 @@
-# Backend team members, please put your backend files here
+# food-talk
+This is the first project for Team 3

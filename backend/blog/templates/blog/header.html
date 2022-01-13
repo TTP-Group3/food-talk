@@ -1,0 +1,74 @@
+<style>
+    .pageHeader{
+        width: 100vw;
+        height: 60px;
+        background-color: #1f2628;
+        position: fixed;
+        top: 0;
+        z-index: 9;
+        user-select: none;
+    }
+    
+    .headerTitle{
+        height: 100%;
+        width: fit-content;
+        overflow: hidden;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-flex;
+        align-items: center;
+        color: #e2f9ff;
+    }
+    .headerTitle > h1{
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-size: 35px;
+    }
+    
+    .headerAccount{
+        width: 220px;
+        height: 100%;
+        float: right;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .headerAccount > button{
+        height: 40px;
+        width: 80px;
+        border: none;
+        background-color: white;
+        font-family: 'Poppins',sans-serif;
+        font-size: 15px;
+        opacity: 0.5;
+        cursor: pointer;
+        outline: 0;
+    }
+    .headerAccount > button:hover{
+        background-color: #fffdd0;
+        opacity: 1;
+    }
+</style>
+<script>
+    userStorage = window.localStorage;
+    userLoggedIn = false;
+    if(localStorage.getItem('userName') !== null){
+        userLoggedIn = true;
+    }
+</script>
+
+<div class="pageHeader">
+    <div class="headerTitle">
+        <h1>Food Talk</h1>
+    </div>
+    <div class="headerAccount">
+       <div class="guestHeader">
+        <button onclick="location.href='logIn/'">Log In</button>
+        <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Sign Up</button>
+       </div>
+    </div>
+</div>

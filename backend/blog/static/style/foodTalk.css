@@ -1,0 +1,324 @@
+body{
+    margin: 0;
+    background-color: #f0fcff;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* .pageHeader{
+    width: 100vw;
+    height: 60px;
+    background-color: #1f2628;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    user-select: none;
+}
+
+.headerTitle{
+    height: 100%;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    color: #e2f9ff;
+}
+.headerTitle > h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.headerAccount{
+    width: 220px;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+.headerAccount > button{
+    height: 40px;
+    width: 80px;
+    border: none;
+    background-color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+    outline: 0;
+}
+.headerAccount > button:hover{
+    background-color: #fffdd0;
+    opacity: 1;
+} */
+/* preview --------------- */
+
+.contentPreview{
+    width: 95vw;
+    height: 500px;
+    margin-top: 80px;
+}
+.contentPreview::before{
+    content: "";
+    background: url(../images/indexContent/contentPreviewMid.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.previewText{
+    height: 100%;
+    width: 800px;
+    position: relative;
+    left: 200px;
+    font-size:40px;
+}
+.previewText > p{
+    font-weight: bold;
+    font-size: 0.6em;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 30px 0 10px 0;
+    position: relative;
+
+}
+.previewText > h1{
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    position: relative;
+    line-height: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.previewText > h1 > span{
+    color: red;
+}
+
+.filterContainer{
+    width: 900px;
+    height: 130px;
+    margin: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.filterBanner{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filterBanner > div{
+    height: 6px;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+}
+.filterBanner > h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+.filterBtns{
+    width: 100%;
+    height: calc(100% - 65px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filterBtns > button{
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: none;
+    background-color: #fffdd0;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.filterBtns > button:hover{
+    background-color: black;
+    color: #fffdd0;
+}
+.selectedFilter{
+    background-color: black !important;
+    color: #fffdd0;
+}
+
+/* Recipe Container ------------------------------- */
+
+.recipeContainer{
+    width: 95vw;
+    margin: 80px 0 80px 0;
+    display: grid;
+    grid-template-columns: repeat(6, 275px);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    grid-row-gap: 40px;
+}
+
+.recipeItem{
+    position: relative;
+    height: 350px;
+    display: none;
+}
+.displayRecipe{
+    display: block;
+}
+
+.recipeRating{
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.recipeRating > img{
+    width: 30px;
+    height: auto;
+    margin: 0;
+    margin-left: 10px;
+}
+.recipeRating > h1{
+    margin: 0;
+    margin-left: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    width: 40px;
+    overflow: hidden;
+}
+.recipeItem:hover .recipeRating > h1{
+    color: white;
+}
+
+.recipeDescr{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.75);
+    display: none;
+}
+.recipeItem:hover .recipeDescr{
+    display: block;   
+}
+
+.recipeName{
+    margin: 45px 0 10px 0;
+    text-align: center;
+    overflow: hidden;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: wheat;
+}
+
+.recipeInfo{
+    display: -webkit-box;
+    color: wheat;
+    max-height: 250px;
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 11;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+#recipe_1{
+    background: url(../images/recipes/raspberry.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_2{
+    background: url(../images/recipes/pastelon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_3{
+    background: url(../images/recipes/honey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_4{
+    background: url(../images/recipes/perfectLasagnaRecipe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_5{
+    background: url(../images/recipes/mango.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_6{
+    background: url(../images/recipes/scrambledEggs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_7{
+    background: url(../images/recipes/macaron.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_8{
+    background: url(../images/recipes/spagettiCarbonara.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_9{
+    background: url(../images/recipes/blackMushroomRice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_10{
+    background: url(../images/recipes/protienPancakes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_11{
+    background: url(../images/recipes/chikenTikka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_12{
+    background: url(../images/recipes/chicken_burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_13{
+    background: url(../images/recipes/chicken-caldereta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_14{
+    background: url(../images/recipes/sizzling-crispy-sisig-recipe-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
