@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakfast</title>
+    <link rel="stylesheet" href="breakfast.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+    <!-- LOGO LINK -->
+    <link rel="icon" href="images/FoodTalkLogo.png">
+
+  </head>
+  <body>
+    {% include 'blog/header.html' %}
+    <br /><br /><br /><br />
+    <!--need breaks or else the bar thing will hide some of the images/text-->
+    <!-- Food image -->
+    <div class="img_container">
+          <img src="imgs/protien-pancakes.jpg" alt="scrambled_eggs" style="width: 44%; height: 450px; border-radius: 12px"/></a>
+      
+        <!--bottom food description section-->
+      <div id="food_description">
+        <h2 id="Ingredient_head" style="text-align: center">
+          <span>Protein Pancakes</span>
+        </h2>
+        <p>
+            What you feed your body in the morning will determine the type day you have.
+            This quick, easy, and delicious protein pancake recipe will ensure you start of the day
+            with the right amount of nutrients to power your day.
+        </p>
+
+        <!-- adding heart image -->
+        <img
+          id="heart"
+          onclick="changeHeart()"
+          class="heart_icon"
+          src="imgs/heart-regular.svg"
+          alt="heart icon"
+        />
+        <!-- adding comment image -->
+        <img
+          id="comment"
+          onclick="show_n_hide(); changeComment();"
+          class="comment_icon"
+          src="imgs/comment-regular.svg"
+          alt="comment icon"
+        />
+        <!-- pop comment section after click on comment -->
+        <div id="dialog" style="display: none" class="comment_section">
+          <input
+            type="user_text"
+            id="comment_box"
+            placeholder="Enter comment"
+          />
+          <!-- Post button -->
+          <button id="postBtn">Post</button>
+          <ul id="unordered_list"></ul>
+        </div>
+      </div>
+      <!--container for the ingredient section-->
+      <div class="ingredient_container">
+        <h2 style="text-align: center">Ingredients</h2>
+        <ul>
+            <li>4 eggs</li>
+            <li>1 Banana</li>
+            <li>1 Cup of Oats</li>
+            <li>1 Scoop Protein Powder (Vanilla or Chocolate) </li>
+            <li> Handfull of Blueberries</li>
+            <li>Pancake Syrup</li>
+            <li>1 tablespoon of Flaxseeds (optional)</li>
+        </ul>
+        <!--bottom link to site, can edit this later to change how it looks-->
+        <h2 style="text-align: center">
+          <a href="https://www.youtube.com/watch?app=desktop&v=B-AhoXbMmRM&feature=youtu.be" target="_blank" class="site_link" style="text-decoration: none">Follow Recipe</a>
+        </h2>
+      </div>
+    </div>
+  </body>
+  <!-- Script -->
+  <script src="breakfast.js"></script>
+</html>

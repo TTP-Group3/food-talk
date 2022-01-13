@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This tells the browser the type text encoding we are using in this Document -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Spaghetti Carbonara Recipe</title>
+        <!-- Page Specific Information when viewed in the history panel and browser tab -->
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styling.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        {% include 'blog/header.html' %}
+
+        <!-- REMOVED, this was the title for the page on the navbar
+        <div class="pageHeader">
+            <div class="headerTitle">
+                <h1>Food Talk</h1>
+            </div>
+        </div>
+        -->
+
+        <!-- Recipe Source consulted: https://cooking.nytimes.com/recipes/12965-spaghetti-carbonara -->
+        <!-- I also made this recipe before slightly different as well, so the recipe below is not exactly 100% as the source -->
+        <!-- This div contains the title of the food, the image of the food, and the ingredients -->
+        <div class="food_container">
+            <img class="spaghetti_carbonara_img" style="margin-right: 250px;" src="imgs/spaghetti_carbonara.jpeg" alt="img">
+            <div class="right-col">
+                <h1>Spaghetti Carbonara</h1>
+                <p><b><u> Ingredients </u></b><br>
+                    <span>&#8226;</span>2 ounces of Spaghetti<br>
+                    <span>&#8226;</span>A few tablespoons of salt<br>
+                    <span>&#8226;</span>2 large eggs and 2 egg yolks<br>
+                    <span>&#8226;</span>1/2 ounces of grated Pecorino Romano<br>
+                    <span>&#8226;</span>1/2 ounces of grated Parmesan Cheese<br>
+                    <span>&#8226;</span>1/2 ounces of Guanciale diced into 1/4 inch cubes<br>
+                </p>
+            </div>
+            <div id="dialog" style="display: none;" class="comment_section">
+                <input type="user_text" id="comment_box" placeholder="Enter comment">
+                <button id="postBtn">Post</button>
+                <ul id="unordered_list"></ul>
+            </div>
+        </div>
+
+        <!-- This div contains the 5 interactive buttons seen on the page
+            One controls the heart/like icon, the other opens the comment section
+            The steps Button shows the instructions for the recipe
+            The tips button shows the author's tips when cooking this recipe
+            The Watch Video button takes you to a Youtube video that shows the recipe being done
+        -->
+        <div class="middle_container">
+            <div>
+                <button id="stepsBtn" onclick="toggleVisibility('steps')" class="stepsBtnDesign">Steps</button>
+            </div>
+            <div>
+                <button id="tipsBtn" onclick="toggleVisibility('tips')" class="tipsBtnDesign">Useful Tips</button>
+            </div>
+            <div>
+                <a href="#"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
+            </div>
+            <img id="heart" onclick="toggleSolid(this.id)" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
+            <img id="comment" onclick="toggleVisibility('dialog'); toggleSolid(this.id);" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
+        </div>
+
+        <!-- This div actually contains the instructions/steps needed to create the dish.
+            The instructions being the recipe itself.
+        -->
+        <div class="flex_container">
+            <div id="steps" style="display: none;" class="steps_container">
+                <h1>Steps</h1>
+                <p>
+                    <li>Step 1: Get a pot and place on the stove.</li><br>
+                    <li>Step 2: Add water upto halfway and put on medium flame.</li><br>
+                    <li>Step 3: Get a separate bowl and whisk the eggs and add salt, black pepper, and some pecorino to it.</li><br>
+                    <li>Step 4: Let the water boil.</li><br>
+                    <li>Step 5: Get a separate frying pan and cook the Guanciale cubes with or without oil until crisp and dark.</li><br>
+                    <li>Step 6: Now add the Spaghetti to the boiling water and keep it until it is firm or al-dente.</li><br>
+                    <li>Step 7: Keep 1 cup of the pasta water and drain the pot of the rest of the water.</li><br>
+                    <li>Step 8: Reheat the Guanciale on the frying pan if necessary.</li><br>
+                    <li>Step 9: Serve some of the pasta in a serving bowl and add the egg-cheese-salt-pepper mixture and transfer the Guanciale from the skillet to the serving bowl.</li><br>
+                    <li>Step 10: Gently stir.</li><br>
+                </p>
+            </div>
+
+            <!-- This div contains some tips by the author to inspire the reader to
+                take liberties with the recipe
+            -->
+            <div id="tips" style="display: none;" class="tips_container">
+                <h1>Useful Tips</h1>
+                <p><li>Add as much salt as preferred for your tastes.</li><br>
+                    <li>Use more egg yolks and less egg whites for a creamier flavor.</li><br>
+                </p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
