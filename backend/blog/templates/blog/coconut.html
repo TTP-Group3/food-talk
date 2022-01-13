@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coconut Noodle Soup Recipe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{% static "style/breakfast.css" %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet"/>
@@ -17,7 +17,7 @@
 
 
     <div class="img_container">
-          <img src="file:///C:/Users/13479/OneDrive/Desktop/coconut%20noodle%20soup/Coconut+Noodle+Soup+(4).png" alt="coconut noodle soup" style="width: 44%; height: 340px; border-radius: 12px"/></a>
+          <img src="{% static 'images/recipes/coconut.png'%}" alt="coconut noodle soup" style="width: 44%; height: 340px; border-radius: 12px"/></a>
 
         <!--bottom food description section-->
       <div id="food_description">
@@ -34,7 +34,7 @@
           id="heart"
           onclick="changeHeart()"
           class="heart_icon"
-          src="file:///C:/Users/13479/OneDrive/Desktop/coconut%20noodle%20soup/heart-regular.svg"
+          src="{% static "images/recipes/heart-regular.svg" %}"
           alt="heart icon"
         />
         <!-- adding comment image -->
@@ -42,7 +42,7 @@
           id="comment"
           onclick="show_n_hide(); changeComment();"
           class="comment_icon"
-          src="file:///C:/Users/13479/OneDrive/Desktop/coconut%20noodle%20soup/comment-regular.svg"
+          src="{% static "images/recipes/comment-regular.svg" %}"
           alt="comment icon"
         />
         <!-- pop comment section after click on comment -->
@@ -83,5 +83,5 @@
     </div>
   </body>
   <!-- Script -->
-  <script src="script.js"></script>
+  <script src="{% static 'script/breakfast.js' %}"></script>
 </html>

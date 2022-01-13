@@ -23,4 +23,5 @@ urlpatterns = [
     path('spaghetti/', views.spaghetti, name="spaghetti"),
     path('mushroom/', views.spaghetti, name="mushroom"),
     path('chicken/', views.spaghetti, name="chicken"),
+    path('coconut/', views.spaghetti, name="coconut"),
 ]
