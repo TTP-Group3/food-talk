@@ -41,3 +41,6 @@ def scrambled_eggs(request):
 
 def lasagna(request):
     return render(request, 'blog/lasagna.html')
+
+def protein_pancakes(request):
+    return render(request, 'blog/protein_pancakes.html')
