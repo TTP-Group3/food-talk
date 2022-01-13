@@ -1,0 +1,114 @@
+
+body{
+    margin: 0;
+    background-color: #f0fcff;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.pageHeader{
+    width: 100vw;
+    height: 60px;
+    background-color: #1f2628;
+    /* position: fixed; */
+    top: 0;
+    z-index: 9;
+    user-select: none;
+    /* border: 2px solid red; */
+}
+
+.headerTitle{
+    height: 100%;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    color: #e2f9ff;
+    /* border: 2px solid red; */
+}
+.headerTitle > h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+}
+.food_container{
+    position: relative;
+    display: flex;
+    margin-top: 2em;
+    /* border: 2px solid red; */
+    width: 95vw;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s ease;
+}
+.food_container:hover{
+  transition: 0.5s ease;
+  box-shadow:
+  1px 1px #373737,
+  2px 2px #373737,
+  3px 3px #373737,
+  4px 4px #373737,
+  5px 5px #373737,
+  6px 6px #373737;
+  transform: translateX(-3px);
+}
+.food_container .right-col {
+    /* border: 2px solid red; */
+    margin-left: -250px;
+}
+.pastelón_img {
+    width: 500px;
+    height: 500px;
+}
+.food_container h1 {
+    text-decoration: underline;
+}
+.food_container p {
+    text-align: left;
+    margin-top: -10px;
+    padding: 0px 50px;
+    font-size: 11pt;
+}
+.heart_icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 430px 800px;
+}
+.comment_icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 430px 900px;
+}
+
+#comment_box, #postBtn {
+    border: none;
+    border-radius: 5px;
+    font-size: 10pt;
+    margin-right: 2.5px;
+}
+#unordered_list {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.comment_section {
+    /* border: 2px solid red; */
+    width: 195vw;
+    background-color: #242333;
+}
