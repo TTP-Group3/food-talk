@@ -9,10 +9,10 @@
     <title>Perfect Lasagna Recipe</title>
 
      <!-- LOGO LINK -->
-     <link rel="icon" href="img/FoodTalkLogo.png">
+     <link rel="icon" href="{% static '/static/images/FoodTalkLogo.png' %}">
 
     <!-- Css link -->
-    <link rel = "stylesheet" href = "lasagna.css" >
+    <link rel = "stylesheet" href = "{% static 'style/lasagna.css' %}" >
 
 </head>
 <body>
@@ -46,7 +46,7 @@
                 </div>
 
             <div class="image">
-                <img src = "img/lasagnaImg.png">
+                <img src = "{% static 'images/recipes/lasagnaImg.png' %}">
             </div>
         </div>
         <div class="container_ingredients">

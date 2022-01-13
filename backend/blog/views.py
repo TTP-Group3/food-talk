@@ -38,3 +38,6 @@ def motehingar(request):
 
 def scrambled_eggs(request):
     return render(request, 'blog/scrambled_eggs.html')
+
+def lasagna(request):
+    return render(request, 'blog/lasagna.html')

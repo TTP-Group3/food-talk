@@ -16,5 +16,6 @@ urlpatterns = [
     path('sisig/', views.sisig, name="sisig"),
     path('admin/', admin.site.urls),
     path('motehingar/', views.motehingar, name="motehingar"),
-    path('scrambled_eggs/', views.scrambled_eggs, name="scrambled_eggs")
+    path('scrambled_eggs/', views.scrambled_eggs, name="scrambled_eggs"),
+    path('lasagna/', views.lasagna, name="lasagna"),
 ]
