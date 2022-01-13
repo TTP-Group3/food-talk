@@ -1,414 +1,304 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-
-/* Rays Nav bar section */
-body{
-  margin: 0;
-  background-color: #f0fcff;
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  overflow-x: hidden;
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*----------Rey's NAVIGATION Section----------*/
+
+.navigation-container {
+    background: #fafcff;
+    box-shadow: 0px px 24px rgba(0, 0, 0, 0.1);
+    height: 100px;
+}
+
+.wrapper {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+nav .logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+}
+
+nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: 1px;
+}
+
+.nav-items li a {
+    color: #021718;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    text-decoration: none;
+
+}
+
+/*----------HEADER CONTAINER----------*/
+
+.header-container {
+    background: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 1450px;
+    display: flex;
+    align-items: center;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    color: darkblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 24px;
+}
+
+header p {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 75px;
+    margin-left: 50px;
+    color: black;    
+}
+
+header img {
+    margin-right: 50px;
+}
+/*------------- Main NAV---------- */
 
 .pageBackDrop{
-position: fixed;
-width: 100vw;
-height: 100vh;
-z-index: 10;
-backdrop-filter: blur(2px);
-display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+    display: none;
 }
 .displayBackDrop{
-display: block;
+    display: block;
 }
 
 .pageHeader{
-width: 100vw;
-height: 60px;
-background-color: #1f2628;
-position: fixed;
-top: 0;
-z-index: 9;
-user-select: none;
+    width: 100vw;
+    height: 60px;
+    background-color: #1f2628;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    user-select: none;
 }
+
 .headerTitle{
-height: 100%;
-width: fit-content;
-overflow: hidden;
-position: relative;
-left: 50%;
-transform: translateX(-50%);
-display: inline-flex;
-align-items: center;
-color: #e2f9ff;
+    height: 100%;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    color: #e2f9ff;
 }
 .headerTitle > h1{
-font-family: 'Poppins', sans-serif;
-font-style: italic;
-font-size: 35px;
-}
-.headerAccount{
-width: 220px;
-height: 100%;
-float: right;
-margin-right: 20px;
-display: flex;
-flex-direction: row;
-align-items: center;
-align-content: center;
-justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 35px;
 }
 
+.headerAccount{
+    width: 220px;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
 .headerAccount > button{
-height: 40px;
-width: 80px;
-border: none;
-background-color: white;
-font-family: 'Poppins',sans-serif;
-font-size: 15px;
-opacity: 0.5;
-cursor: pointer;
-outline: 0;
+    height: 40px;
+    width: 80px;
+    border: none;
+    background-color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+    outline: 0;
 }
 .headerAccount > button:hover{
-background-color: #fffdd0;
-opacity: 1;
-}
-.logo{
-margin-bottom: 30px;
-text-align: center;
-width: 100%;
-height: auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-
-}
-
-.logo img{
-display:block;
-width: 200px;
-height: 200px;
-border-radius: 50%;
-margin-top: 30px;
-}
-
-ul {
-margin-top: 30px;
-list-style-type: none;
-}
-
-ul li a{   
-text-decoration: none;
-display: block;
-padding: 13px 30px;
-border-bottom: 1px solid #10558d;
-color: rgb(241, 237, 237);
-font-size: 20px;
-position: relative;
-}
-
-ul li a .icon{
-color: #dee4ec;
-width: 30px;
-display: inline-block;
-}
-
-ul li a:hover,
-ul li a.active{
-color: #0c7db1;
-
-background:white;
-border-right: 2px solid rgb(5, 68, 104);
-}
-
-ul li a:hover .icon,
-ul li a.active .icon{
-color: #0c7db1;
-}
-
-ul li a:hover:before,
-ul li a.active:before{
-display: block;
-}
-
-
-/* ----------------------------- */
+    background-color: #fffdd0;
+    opacity: 1;
+} 
 
 /* Side Menu --------------------- */
 
 .sideMenu{
-position: fixed;
-height: 100vh;
-width: 300px;
-left: -300px;
-z-index: 10;
-transition: left 0.5s ease;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    left: -300px;
+    z-index: 10;
+    transition: left 0.5s ease;
 
-background-color: rgb(24, 22, 22);
+    background-color: rgb(24, 22, 22);
 }
 .showSideMenu{
-left: 0;
+    left: 0;
 }
 
 .headerMenuBtn{
-width: 60px;
-height: fit-content;
-display: inline-flex;
-flex-direction: column;
-align-items: center;
-padding: 12px 0;
-cursor: pointer;
-position: absolute;
-right: -60px;
+    width: 60px;
+    height: fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+    position: absolute;
+    right: -60px;
 }
 .headerMenuBtn > div{
-width: 40px;
-height: 3px;
-background-color: white;
-border-radius: 10px;
-margin: 4.5px;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 4.5px;
 }
 .headerMenuBtn:hover{
-background-color: #ffffff;
+    background-color: #ffffff;
 }
 .headerMenuBtn:hover > div{
-background-color: black;
+    background-color: black;
 }
-/* --------------------------- */
 
-/* content recipe section*/
-.title{
-font-size: 35px;
-color: black;
-text-transform: uppercase;
-margin: 30px auto  50px;
-text-align: center;
-}
+
+/* <------- Chicken burger page --------> */
+
+/* <- Container holds all the content and applies background color   -> */
 .container{
-display:grid;
-grid-template-columns: repeat(2, 1fr);
-
+    padding:15px;
+    height:100%;
+    background:rgb(255, 255, 255);
+    display:grid;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.721),rgba(255, 166, 0, 0.742),rgba(255, 255, 0, 0.386));
+    background-size: cover;
+}
+/* set header font and color */
+.h1_16{
+    font-size:39px;
+    color:white;
+    padding-top:4rem;
+}
+.container p{
+    font-size:20px;
+    color:rgb(33, 24, 24);
+}
+/* sets the burger picture sizing */
+#recipe_pic{
+    max-height:490px;
+    margin:10px 0;
+}
+.h4_16{
+    color:white;
 }
 
-.content{
-margin: 100px 0 30px 0 ;
-align-items: center;
-width: 900px;
-height: 800px;
-background: rgba(229, 229, 229, 0.7);
-padding: 10px;
-box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-border-radius: 7px;
-transition: .3s;
-
+.h4_16 span{
+    color:rgb(215, 207, 207);
+    font-size: small;
+    margin-left:5px;
 }
-
-.content_info{
-width: 90%; 
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 25px;
-margin: 0 0 0 30px;
-
+/* displays calorie and serving information */
+.info_bar{
+    height:90px;
+    font-size:18px;
+    margin-top:25px;
+    margin-bottom:40px;
+    background:rgb(27, 2, 2);
+    color:white;
+    display:grid;
+    list-style-type:none;
+    grid-template-columns: repeat(3,1fr);
+    place-items:center;
+    border-width: 9px;
+    border-style: solid;
+    border-image:
+    linear-gradient(
+    to right, rgb(255, 14, 14), rgba(255, 166, 0, 0.927),rgba(254, 68, 0, 0.995)) 1 1 100%;
 }
-.box{
-padding: 10px;
-box-shadow: 0 0 15px 0 #00000021;
-background-color: #fff;
-color: #181818;
-
+/* <- displays the ingredients-> */
+.recipe{
+    display:grid;
+    grid-template-columns: 1fr ;
 }
-.box h3{
-font-weight: 500;
-text-transform: uppercase;
-text-align:center;
+.h2_16{
+    text-align:center;
+    color:rgb(29, 147, 250);
+    background:transparent;
 }
-.box p{
-text-align:center;
-font-size: 18px;
+/* sets same properties for the ingredients,directons and nutritions boxes */
+.ingredients, .directions,.nutrition{
+    margin-top:15px 0;
+    margin-bottom:20px;
+    padding:25px 0;
+    padding-left:5rem;
+    background:rgb(44, 40, 40);
+    color:rgb(249, 247, 246);
+    text-align:left;
+    border-left: 9px solid orange;
+    border-right:9px solid orange;
+    font-size:18px;
+    line-height:1.9;
 }
-img{
-width: 90%;
-height: 450px;
-margin: 50px 0 30px 30px;
-
-
+.ingredients{
+    display:grid;
+    grid-template-columns:1fr 1fr;
 }
-
-.container_text{
-align-items: center;
-width: 900px;
-height: 600px;
-background: rgba(50, 126, 90, 0.02);
-padding: 10px;
-box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-border-radius: 7px;
-transition: .3s;
-line-height:1.7;
-}
-
-p{
- font-size: 20px;
-}
-.text{
-margin: 30px 0 30px 30px;
-}
-
-.title_ingredients{
-font-size: 35px;
-color: black;
-text-transform: uppercase;
-text-indent: 90px;
-}
-.text_ingredients{
-text-indent: 39px;
-}
-.container_ingredients{
-margin: 100px 40px 0 0;
-width: 900px; 
-height: 800px;
-background: rgba(229, 229, 229, 0.7);
-padding: 10;
-box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-border-radius: 7px;
-transition: .3s;
-}
-
-.text_ingredients li{
-  padding-top:1em;
-
-  
-}
-p,
-li{
-  font-size:19px;
-
-}
-.container_step{
-width: 900px;
-height: 600px;
-background: rgba(50, 126, 90, 0.02);
-padding: 10px;
-box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-border-radius: 7px;
-transition: .3s;
-line-height:2.3;
-text-align:center;
-
-}
-
-
-
-/* responsive web section */
-@media screen and (max-width:1900px){
-
-.content{
-  margin: 100px;
-  width: 800px; 
-}
-
-.container_text{
-  margin: 0 0 0 100px;
-  width: 800px;
- }
-
- .container_ingredients{
-  width: 700px; 
- }
-.container_step{
-  width: 700px;
-}
-
 .nutrition{
-  width: 1000px;
-  
-}
-}
-@media screen and (max-width:1700px){
-
-.container_ingredients{
-  width: 600px; 
- }
-.container_step{
-  width: 600px;
+    /* margin:0 20px; */
+    /* text-align:center; */
+    margin-bottom:0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    
 }
 
-}
+/* ----------Burger page end------------------ */
 
-@media screen and (max-width:1600px){
-
-.content{
-  width: 500px; 
-}
-
-p{
-  font-size: 18px;
-}
-
-.container_text{
-  width: 500px;
- }
-
- .container_ingredients{
-  width: 400px; 
- }
-.container_step{
-  width: 400px;
-}
-
-.nutrition{
-  width: 800px;
-  
-}
-}
-
-@media screen and (max-width:900px){
-
-.container{
-  display:grid;
-  grid-template-columns: repeat(1, 1fr);
-
-}
-/* content lasagna */
-.content{
-  margin: 100px auto 0;
-  align-items: center;
-  width: 500px;
-}
-.container_text{
-  
-  margin: 100px auto 0;
-  align-items: center;
-  width: 500px;
-  height: 600px;
-
- }
-
- .container_ingredients{
-  margin: 100px auto 0;
-  align-items: center;
-  width: 500px;
-  height: 800px;
-
-
- }
-.container_step{
-  margin: 100px auto 0;
-  align-items: center;
-  width: 500px;
-  height: 600px;
-}
-
-}
-
-
-
-
-
-/* footer design */
 

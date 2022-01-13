@@ -1,3 +1,5 @@
+// Rey's Nav Javascript
+
 function expandMenu(){
     contentMenu = document.getElementsByClassName("contentMenu")[0];
     contentMenu.classList.add("showContentMenu");
