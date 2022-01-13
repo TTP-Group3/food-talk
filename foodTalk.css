@@ -188,7 +188,7 @@ ul li a.active:before{
 }
 .contentPreview::before{
     content: "";
-    background: url(../images/contentPreviewMid.jpg);
+    background: url(images/contentPreviewMid.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
