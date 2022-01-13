@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Breakfast</title>
-    <link rel="stylesheet" href="{% static 'breakfast.css' %}" />
+    <link rel="stylesheet" href="{% static 'style/breakfast.css' %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet"/>
@@ -18,12 +18,12 @@
 
   </head>
   <body>
-    
+    {% include 'blog/header.html' %}
     <br /><br /><br /><br />
     <!--need breaks or else the bar thing will hide some of the images/text-->
     <!-- Food image -->
     <div class="img_container">
-          <img src="{% static 'images/motehingar.jpg'%}" alt="scrambled_eggs" style="width: 44%; height: 340px; border-radius: 12px"/></a>
+          <img src="{% static 'images/recipes/motehingar.jpg'%}" alt="motehingar" style="width: 44%; height: 450px; border-radius: 12px"/></a>
       
         <!--bottom food description section-->
       <div id="food_description">
@@ -41,7 +41,7 @@
           id="heart"
           onclick="changeHeart()"
           class="heart_icon"
-          src="{% static 'images/heart-regular.svg'%}"
+          src="{% static 'images/recipes/heart-regular.svg'%}"
           alt="heart icon"
         />
         <!-- adding comment image -->
@@ -49,7 +49,7 @@
           id="comment"
           onclick="show_n_hide(); changeComment();"
           class="comment_icon"
-          src="{% static 'images/comment-regular.svg'%}"
+          src="{% static 'images/recipes/comment-regular.svg'%}"
           alt="comment icon"
         />
         <!-- pop comment section after click on comment -->
@@ -90,5 +90,5 @@
     </div>
   </body>
   <!-- Script -->
-  <script src="{% static 'breakfast.js' %}"></script>
+  <script src="{% static 'script/breakfast.js' %}"></script>
 </html>

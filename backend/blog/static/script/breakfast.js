@@ -3,11 +3,11 @@ function changeHeart() {
  // initializing var heartId to 'heart' id in html file
   var heartId = document.getElementById("heart");
   // if src of heart img is regular then change to solid
-  if (heartId.src.match("/static/images/heart-regular.svg")) {    
-    heartId.src = "/static/images/heart-solid.svg'}";
+  if (heartId.src.match("/static/images/recipes/heart-regular.svg")) {    
+    heartId.src = "/static/images/recipes/heart-solid.svg";
   } else {
     // change back to regular
-    heartId.src = "/static/images/heart-regular.svg";
+    heartId.src = "/static/images/recipes/heart-regular.svg";
   }
 }
 // func for comment icon
@@ -15,11 +15,11 @@ function changeComment() {
   // initializing var commentId to 'comment' id in html file
   var commentId = document.getElementById("comment");
   // if src of comment img is regular then change to solid
-  if (commentId.src.match("/static/images/comment-regular.svg")) {   
-    commentId.src = "/static/images/comment-solid.svg";
+  if (commentId.src.match("/static/images/recipes/comment-regular.svg")) {   
+    commentId.src = "/static/images/recipes/comment-solid.svg";
   } else {
     // change back to regular
-    commentId.src = "/static/images/comment-regular.svg";
+    commentId.src = "/static/images/recipes/comment-regular.svg";
   }
 }
 //icon not solid in another click
