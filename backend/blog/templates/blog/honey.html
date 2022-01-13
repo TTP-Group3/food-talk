@@ -1,0 +1,75 @@
+{% load static %}
+<html>
+    <link rel="stylesheet" href="{% static 'style/dessert.css' %}">
+    <body>
+        <div class="pageBackDrop" onclick="clickedBackDrop()"></div>
+        <div class="pageHeader">
+            <div class="headerTitle">
+                <h1>Food Talk</h1>
+            </div>
+            <div class="headerAccount">
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Log In</button>
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Sign Up</button>
+            </div>
+        </div>
+        <div class="sideMenu">
+            <div class="headerMenuBtn" onclick="showSideMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+
+    <div class="block-3">
+        <p id= "title-3"> Honey Baklava</p><br>
+
+    <img id = "honey" src ="{% static 'images/recipes/honey.jpg' %}" style="float:left"> 
+    
+    <p id = "ingredients" style="float:right">
+        <!--insert ingredients here-->
+        Ingredients:<br><br>
+        
+        1 (16 ounce) package phyllo dough <br>
+        1 pound chopped nuts <br>
+        1 cup butter <br>
+        1 teaspoon ground cinnamon <br>
+        1 cup water <br>
+        1 cup white sugar <br>
+        1 teaspoon vanilla extract <br>
+        ½ cup honey <br>
+    </p>
+</div>
+<div class = "block2-3">
+    <h3 id = "p-title">Process</h3>
+
+    <p id="process">
+
+        1. oven to 350 degrees F <br><br>
+        2.  Pulse walnuts about 10 times in a food processor until coarsely ground/ finely chopped. In a medium bowl, stir together: 4 cups finely chopped walnuts and 1 tsp cinnamon<br><br>
+        3.  Place 10 phyllo sheets into baking pan one at a time, brushing each sheet with butter once it’s in the pan before adding the next (i.e. place phyllo sheet into pan, brush the top with butter, place next phyllo sheet in pan, 
+        butter the top, etc. etc.).<br><br>
+        4.  Keep remaining phyllo covered with a damp towel at all times. Spread about 1/5 of nut mixture (about 3/4 cup) over phyllo dough. <br><br>
+        5.  Add 5 buttered sheets of phyllo, then another layer of nuts. Repeat x 4. Finish off with 10 layers of buttered phyllo sheets. Brush the very top with butter. <br><br>
+        6.  Cut pastry into 1 1/2″ wide strips, then cut diagonally to form diamond shapes. Bake at 325˚F for 1 hour and 15 min or until tops are golden brown <br><br>
+        7. Remove from oven and immediately spoon the cooled syrup evenly over the hot baklava (you’ll hear it sizzle). This will ensure that it stays crisp rather than soggy. Let baklava cool completely, uncovered and at room temperature <br><br>
+       
+    </p>
+    </div>
+
+<div class = "block3-3">
+    <p id = "c-title">Like it? Share your thoughts with us!</p>
+    <form action = "#" id = "form">
+        <p id = "name" style = "float: left">User name</p><br>
+        <input type = "text" name = "name" placeholder=" "><br>
+        <p id = "email" style = "float: left">Email</p><br>
+        <input type = "email" name = "email" placeholder=" "><br>
+        <p id = "comment" style = "float: left">Comment</p><br>
+        <textarea name = "comment" placeholder=" "></textarea>
+        <br>
+        <button type = "submit">submit</button>
+    </form>
+</div>
+    <script src="{% static 'script/dessert.js' %}"></script>
+</html>
+

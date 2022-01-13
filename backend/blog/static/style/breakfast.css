@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Open+Sans+Condensed:ital,wght@1,300&family=Roboto:wght@300&display=swap");
+/* Applying background to body */
+body {
+  background: linear-gradient(to bottom right, rgb(126, 52, 22), #dedace);
+}
+
+.img_container {
+  margin: auto;
+  margin-left: 5%;
+}
+
+.ingredient_container {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 0px 8px 5px #e3e3e3;
+  color: white;
+  border-radius: 8px;
+  border: double 2px;
+  width: 40%;
+  margin: auto;
+  margin-top: 6vh;
+  margin-bottom: 7vh;
+  margin-right: 5%;
+  padding: 2%;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
+}
+
+#Ingredient_head > span {
+  padding: 8px;
+  border-radius: 8px;
+  border: solid 2px;
+  font-family: "Inconsolata", monospace;
+  /* should ingredient header be in span or h2 */
+}
+
+/* Summary */
+#food_description {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-radius: 8px;
+  border: double 2px;
+  padding: 3%;
+  width: 40%;
+  margin: auto;
+  margin-right: 6vh;
+  float: right;
+  font-family: "Inconsolata", monospace;
+}
+
+.site_link {
+  background: rgb(211, 200, 199);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: Work Sans;
+  padding: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: #f8f4f4;
+  width: 20vw;
+  font-family: "Inconsolata", monospace;
+  transition: 0.3s;
+}
+
+.site_link:hover {
+  background-color: rgb(182, 69, 69);
+  color: black;
+}
+.site_link:active {
+  background-color: white;
+}
+
+/*heart(like) icon css property*/
+.heart_icon {
+  float: right;
+  margin: 6%;
+  width: 30px;
+  height: 30px;
+}
+/*comment icon css property*/
+.comment_icon {
+  float: right;
+  margin: 6%;
+  width: 30px;
+  height: 30px;
+}
+
+/*comment section box and post button property*/
+#comment_box,
+#postBtn {
+  border: none;
+  border-radius: 5px;
+  font-size: 10pt;
+  margin-right: 2.5px;
+}
+
+/*Unordered list for listing the comments */
+#unordered_list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*comment section css color and sizing*/
+.comment_section {
+  padding: 3%;
+  border-radius: 8px;
+  margin-top: 100px;
+  width: 90%;
+  font-family: "Inconsolata", monospace;
+  /*change the background color to something you like b/c this looks ugly*/
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(105, 102, 102);
+}

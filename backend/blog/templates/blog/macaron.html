@@ -1,0 +1,120 @@
+{% load static %}
+<html>
+    <link rel="stylesheet" href="{% static 'style/dessert.css' %}">
+    <body>
+        <div class="pageBackDrop" onclick="clickedBackDrop()"></div>
+        <div class="pageHeader">
+            <div class="headerTitle">
+                <h1>Food Talk</h1>
+            </div>
+            <div class="headerAccount">
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Log In</button>
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Sign Up</button>
+            </div>
+        </div>
+        <div class="sideMenu">
+            <div class="headerMenuBtn" onclick="showSideMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+
+    <div class="block-1">
+        <p id= "title-1"> Macarons</p><br>
+
+    <img id = "macaron" src ="{% static 'images/recipes/macaron.jpeg' %}" style= "float:left"> 
+    <!--change pictures-->
+    
+    <p id = "ingredients-1" style="float:right">
+        <!--insert ingredients here-->
+        Ingredients:<br><br>
+        
+        Macaron Shells:<br><br>
+        Egg Whites (100 g)/ <br>
+        Sugar (90 g) <br>
+        Almond Flour (140 g) <br>
+        10x Sugar/ Confectionar Sugar/ Icing sugar (130 g)<br><br>
+
+        American Butter Cream:<br><br>
+        Soft Unsalted Butter ( 250 g )<br>
+        Powdered Sugar/ Icing Sugar ( 500 g )<br>
+        Vanilla Extract ( 1 Tbsp )<br>
+        Milk ( 3-5 tbsp )<br>
+        <br> <br>
+    </p>
+</div>
+<div class = "block2-1">
+    <h3 id = "p-title">Process</h3>
+
+    <p id="process">
+
+        1. Macaron Shells:<br> <br>
+        Place your egg whites in a bowl <br> 
+        Sieve the Icing sugar and whisk together 
+        in a separate bowl. Then whiz dry the ingredients
+        in a food processor. This is to ensure
+        that you have smooth shells and no bumpy ones. Hence, 
+        the more you do it, the better the result.
+        <br><br>
+        In your bowl of egg whites, use a wisk and set your machine on high. 
+        Once it gets frothy, you add the sugar little by little. This will take
+        some time so do not rush this process or else your meringue will break 
+        and it could lead to hollow shells or break the shells. 
+        <br><br>
+        Once that is ready, you add 1/3 of your ddry ingredients (almond flour and
+        icing sugar) into the meringue. And then FOLD it (also known as macronage). 
+        Add another 1/3 and repeat this process until you have no more dry ingredients
+        left to fold. Then you just PRESS your meringue, to get rid of air bubbles. 
+        To know when it is ready, you can form an 8 with your spatula. DO NOT 
+        OVER MIX THIS. If you do, you will see that it is too runny.  
+        <br><br>
+        Now it is time for piping. Be sure when you pipe, you pipe on top. 
+        Do no tilt your hand and pipe sideways. Your macaron shells will not 
+        grow nicely. You can pipe this with parchment or silicon mats. When your 
+        aiming for a specific size, be sure to pipe a few cm less. This is because
+        on the next step, you will take the whole tray and tap it down and they will
+        increase its size. At the same time, it removes the air bubbles that still 
+        remain in the macarons. you don't want to tap it too much. If there are still
+        some bumpy spots on your shells, you can use a skewer or a pin. Let it rest.
+        Depending on your environment, you might have to wait 30 min - 1hr for this 
+        to be ready to bake in the oven. To know when they're ready, you will notice
+        that your shells have become less shiny and they're dry to the touch. So be 
+        sure to gently touch it and see if they are ready to go.
+        <br><br>
+        Place your tray into the center rack of your oven at 300 degrees fahrenheit 
+        for 14 min. Be sure at 7 min, to flip them over so that the other half also 
+        gets baked well. It really depends on your oven, so if you see that they 
+        still haven't risen up, leave it for a few more minutes. Once they are 
+        ready, take them out and let it cool. If you immediately take it out, your 
+        bottom of the shell will stick to the parchment paper and ruin it. 
+        <br><br> 
+        American Buttercream:
+        Soft butter meaning that you leave your butter out and it's soft
+        to the touch. Wisk the butter into your machine for 5 min. Pour half of the 
+        icing sugar into the bowl and whisk it on the low or else the powdered sugar 
+        will blow all over the place. So start slowly and then increase the speed for
+        3 min. Then add the rest of the powdered sugar with vanilla extract and milk.
+        Wisk it for 2 min until it is nice and fluffy. At this point you can add Food
+        coloring and flavor and it is ready to be piped for your macarons. Done! 
+     
+    </p>
+    </div>
+
+    <div class = "block3-1">
+        <p id = "c-title">Like it? Share your thoughts with us!</p>
+        <form action = "#" id = "form">
+            <p id = "name" style = "float: left">User name</p><br>
+            <input type = "text" name = "name" placeholder=" "><br>
+            <p id = "email" style = "float: left">Email</p><br>
+            <input type = "email" name = "email" placeholder=" "><br>
+            <p id = "comment" style = "float: left">Comment</p><br>
+            <textarea name = "comment" placeholder=" "></textarea>
+            <br>
+            <button type = "submit">submit</button>
+        </form>
+    </div>
+    <script src="{% static 'script/dessert.js' %}"></script>
+</html>
+

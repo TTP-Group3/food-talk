@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'style/pastelon.css' %}" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="pageHeader">
+      <div class="headerTitle">
+        <h1>Food Talk</h1>
+      </div>
+    </div>
+
+    <div class="food_container">
+        <img class="pastelón_img" style="margin-right: 250px;" src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/237368.jpg" alt="img">
+        <div class="right-col">
+            <h1>Pastelón Recipe</h1>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit malesuada dapibus. Suspendisse mi neque, tristique nec nulla id, auctor blandit sapien. Sed eget dolor elementum nisi volutpat tristique. Cras volutpat, quam ac volutpat congue, quam quam aliquam eros, sit amet molestie mi tortor eu mauris. Integer euismod, lectus et varius aliquam, arcu felis convallis risus, sed pharetra urna sapien in leo. Donec quis ex in mi maximus dictum vitae et est. Donec vitae auctor nulla. Fusce arcu sapien, volutpat sed leo eget, aliquet fermentum magna. Donec cursus et risus ac facilisis. Cras tristique lacus sem, ut rhoncus mauris egestas et. Sed fermentum elementum urna, sed aliquet quam scelerisque quis. Vivamus in turpis metus.
+              </p>
+        </div>
+        <img id="heart" onclick="changeHeart()" class="heart_icon" src="{% static 'images/pageCosmetics/heart-regular.svg' %}" alt="heart icon">
+        <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="{% static 'images/pageCosmetics/comment-regular.svg' %}" alt="comment icon">
+        
+        <div id="dialog" style="display: none;" class="comment_section">
+          <input type="user_text" id="comment_box" placeholder="Enter comment">
+          <button id="postBtn">Post</button>
+          <ul id="unordered_list"></ul>
+        </div>
+    </div>
+    <script src="{% static 'script/pastelon.js' %}" async defer></script>
+  </body>
+</html>
