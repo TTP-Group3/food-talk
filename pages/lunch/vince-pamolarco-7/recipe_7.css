@@ -1,0 +1,66 @@
+.main{
+    /* this will center the whole page */
+    text-align: center; 
+    overflow:hidden;
+}
+
+.pageHeader {
+    /* I copied this code from Rey's Design */
+    width: 100vw;
+    height: 60px;
+    background-color: #1f2628;
+    top: 0;
+    z-index: 9;
+    user-select: none;
+}
+
+body {
+
+    /* I copied this code from Rey's Design */
+    margin: 0;
+    background-color: #f0fcff;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headerTitle {
+    /* I copied this code from Rey's Design */
+    height: 100%;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    color: #e2f9ff;
+}
+
+.recipe_pic{
+    /* This code will modify the picture in the recipe */
+    height: auto;
+    float:left;
+    resize: horizontal;
+    max-width: 75%;
+}
+
+.recipe_ing{
+    /* This will modify the ingredients in the page */
+    text-align: left;
+    display:inline-block;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+
+.recipe_7 {
+    height: auto;
+    width: 80%;
+
+}
+
