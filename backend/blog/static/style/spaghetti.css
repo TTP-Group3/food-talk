@@ -1,0 +1,315 @@
+/* Apply all of the selectors below this media line when the width of the screen is >= 768px */
+@media screen and (min-width: 768px){
+  body {
+    margin: 0;
+    background-color: #f0fcff;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /*  Removed header selectors because we are using Rey's modular header template instead
+  .pageHeader {
+  width: 100vw;
+  height: 60px;
+  background-color: #1f2628;
+  top: 0;
+  z-index: 9;
+  user-select: none;
+  }
+  .headerTitle {
+  height: 100%;
+  width: fit-content;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  color: #e2f9ff;
+  }
+  .headerTitle > h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 35px;
+  }
+   */
+
+/* These selectors are for the food_container which affect how the ingredients,
+ * picture, food title, and the background of the box that contains all this */
+.food_container {
+  background-color: white;
+  position: relative;
+  display: flex;
+  margin-top: 2em;
+  width: 95vw;
+  text-align: center;
+  transition: 0.5s ease;
+  box-sizing: border-box;
+}
+
+/* Create a box shadow when the mouse hovers over this div */
+.food_container:hover {
+  transition: 0.5s ease;
+  box-shadow: 1px 1px #373737, 2px 2px #373737, 3px 3px #373737, 4px 4px #373737,
+  5px 5px #373737, 6px 6px #373737;
+  transform: translateX(-3px);
+}
+
+/* This selector affects the ingredients panel to the right of the picture */
+.food_container .right-col {
+  margin-left: -250px;
+  width: 100%;
+}
+
+/* This selector affects the size of the image of the food */
+.spaghetti_carbonara_img {
+  width: 400px;
+  height: 400px;
+}
+
+/* This selector affects the size of the title of the food */
+.food_container h1 {
+  font-size: 20pt;
+  text-decoration: underline;
+}
+
+/* This selector sets the appearance of the ingredients list on the page */
+.food_container p {
+  margin-top: -15px;
+  font-size: 12pt;
+  text-align: center;
+  line-height: 168%;
+}
+
+/* This selector affects the appearance of the button that shows the recipe on the page */
+.stepsBtnDesign {
+  position: relative;
+  margin-left: -700px;
+  font-family: "Poppins";
+  font-size: 1.3em;
+  padding: 0.1em 1em;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 0px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+/* This selector affects the appearance of the button that shows the author's tips on the page */
+.tipsBtnDesign {
+  position: absolute;
+  margin-left: -270px;
+  margin-top: -39px;
+  font-family: "Poppins";
+  font-size: 1.3em;
+  padding: 0.1em 1em;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 0px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+/* This selector affects the appearance of the button that redirects the user to the Youtube video
+ * showcasing the recipe */
+.videoBtnDesign {
+  position: absolute;
+  margin-left: -85px;
+  margin-top: -39px;
+  font-family: "Poppins";
+  font-size: 1.3em;
+  padding: 0.1em 1em;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 0px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+/* This selector affects the appearance of the like button */
+.heart_icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 300px;
+}
+
+/* This selector affects the appearance of the comment icon */
+.comment_icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 350px;
+}
+
+/* These selectors change the appearance of the comment box and the appearance of the comment list */
+#comment_box,
+#postBtn {
+  border: none;
+  border-radius: 5px;
+  font-size: 10pt;
+  margin-right: 2.5px;
+}
+#unordered_list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* This selector affects the appearance of the list of comments in the comment section container */
+.comment_section li {
+  border-style: solid;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+/* This selector affects the appearance of comment section container */
+.comment_section {
+  width: 40%;
+  background-color: #242333;
+}
+
+/* This selector affects the container that holds the buttons and sets its color properites */
+.middle_container {
+  background-color: white;
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-left: 400px;
+  width: 63vw;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+/* This selector lets the container that holds the buttons to hover on mouse-over */
+.middle_container:hover {
+  transition: 0.5s ease;
+  box-shadow: 1px 1px #373737, 2px 2px #373737, 3px 3px #373737, 4px 4px #373737,
+  5px 5px #373737, 6px 6px #373737;
+  transform: translateX(-3px);
+}
+
+/* This selector sets the flex container properties used in the 3 main divs of the page */
+.flex_container {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 5em;
+}
+
+/* This selector affects the appearance of the container that holds the recipe/steps to make the food */
+.steps_container {
+  background-color: white;
+  position: relative;
+  width: 45vw;
+  transition: 0.5s ease;
+}
+
+/* This selector makes it so the container has a hover effect on mouse-over */
+.steps_container:hover {
+  transition: 0.5s ease;
+  box-shadow: 1px 1px #373737, 2px 2px #373737, 3px 3px #373737, 4px 4px #373737,
+  5px 5px #373737, 6px 6px #373737;
+  transform: translateX(-3px);
+}
+
+/* This selector sets the appearance of the recipe heading in the steps container */
+.steps_container h1 {
+  font-size: 20pt;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* This selector sets the appearance of the text in the in the steps container
+ * This affects how the recipe/instructions are viewed */
+.steps_container p {
+  margin-top: -10px;
+  font-size: 11pt;
+}
+
+/* This selector sets the appearance of the container containing the authors tips */
+.tips_container {
+  background-color: white;
+  position: relative;
+  margin-left: 50px;
+  width: 45vw;
+  transition: 0.5s ease;
+}
+
+/* This selector makes it so the container can move and hover on mouse over */
+.tips_container:hover {
+  transition: 0.5s ease;
+  box-shadow: 1px 1px #373737, 2px 2px #373737, 3px 3px #373737, 4px 4px #373737,
+  5px 5px #373737, 6px 6px #373737;
+  transform: translateX(-3px);
+}
+
+/* This selector sets the size and position of the title for the tips container */
+.tips_container h1 {
+  font-size: 20pt;
+  text-align: center;
+  text-decoration: underline;
+}
+/* This selector sets the size and position of the text inside the tips container */
+.tips_container p {
+  margin-top: -10px;
+  font-size: 11pt;
+  text-align: left;
+}
+}
+
+/* Apply all of the selectors below this media line when the width of the screen is >= 1920p */
+@media screen and (min-width: 1920px) {
+  /* This selector affects the size of the image and sets it to 500x625 */
+  .spaghetti_carbonara_img {
+    width: 625px;
+    height: 500px;
+  }
+
+  /* This selector affects the container that contains the ingredients list */
+  .food_container p {
+    margin-left: 50px;
+    text-align: left;
+    margin-top: -15px;
+    font-size: 17pt;
+    line-height: 250%;
+  }
+
+  /* This selector affects the container that holds the buttons */
+  .middle_container {
+    margin-left: 700px;
+    width: 58vw;
+  }
+
+  /* This selector stes the exact position of the steps button on the page */
+  .stepsBtnDesign {
+    margin-left: -1010px;
+  }
+  /* This selector stes the exact position of the tips button on the page */
+  .tipsBtnDesign {
+    margin-left: -420px;
+  }
+  /* This selector stes the exact position of the video button on the page */
+  .videoBtnDesign {
+    margin-left: -230px;
+  }
+  /* This selector stes the exact position of the heart button on the page */
+  .heart_icon {
+    margin-left: 450px;
+  }
+  /* This selector stes the exact position of the comment button on the page */
+  .comment_icon {
+    margin-left: 500px;
+  }
+}

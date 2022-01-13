@@ -169,7 +169,7 @@ body{
     display: none;
 }
 .recipeItem:hover .recipeDescr{
-    display: block;   
+    display: block;
 }
 
 .recipeName{
@@ -276,4 +276,8 @@ body{
     background: url(../images/recipes/coconut.png);
     background-repeat: no-repeat;
     background-size: cover;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 17b4945734062fe259ba39bf1edb1815451a5f76
