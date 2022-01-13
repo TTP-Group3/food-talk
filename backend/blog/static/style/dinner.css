@@ -65,7 +65,7 @@
       margin-left: -250px;
       width: 100%;
     }
-    .pastelón_img {
+    .food_img {
       width: 400px;
       height: 400px;
     }
@@ -227,7 +227,7 @@
     @media screen and (min-width: 1920px) {
         /* media screen for bigger displays
            usually just adjusting the size and positioning of things */
-    .pastelón_img {
+    .food_img {
         width: 700px;
         height: 700px;
     }
@@ -240,7 +240,7 @@
       }
       .middle_container {
         margin-left: 700px;
-        width: 58vw;  
+        width: 58vw;
       }
       .stepsBtnDesign {
         margin-left: -1010px;
@@ -258,4 +258,4 @@
         margin-left: 500px;
       }
     }
-    
+
