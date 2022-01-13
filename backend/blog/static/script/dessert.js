@@ -1,34 +1,22 @@
-function expandMenu(){
-    contentMenu = document.getElementsByClassName("contentMenu")[0];
-    contentMenu.classList.add("showContentMenu");
-}
-
-function displayBackDrop(){
-    var blur = document.getElementsByClassName("pageBackDrop")[0];
+// func for heart icon
+function changeHeart() {
+    // initializing var heartId to 'heart' id in html file
+     var heartId = document.getElementById("heart");
+     // if src of heart img is regular then change to solid
+     if (heartId.src.match("heart-regular.svg")) {    
+       heartId.src = "heart-solid.svg";
+     } else {
+       // change back to regular
+       heartId.src = "heart-regular.svg";
+     }
+   }
+   
+   var button = document.getElementById("button");
+   button.addEventListener("click", function () {
+     var value = document.getElementById("comment_box").value;
+     var li = document.createElement("li");
+     var text = document.createTextNode(value);
+     li.appendChild(text);
+     document.getElementById("unordered").appendChild(li);
     
-    if(!blur.classList.contains("displayBackDrop")){
-        blur.classList.add("displayBackDrop");
-    }else{
-        blur.classList.remove("displayBackDrop");
-    }
-}
-function clickedBackDrop(){
-    var blur = document.getElementsByClassName("pageBackDrop")[0];
-    var sideMenu = document.getElementsByClassName("sideMenu")[0];
-
-    blur.classList.remove("displayBackDrop");
-
-    if(sideMenu.classList.contains("showSideMenu")){
-        sideMenu.classList.remove("showSideMenu");
-    }
-}
-function showSideMenu(){
-    var sideMenu = document.getElementsByClassName("sideMenu")[0];
-
-    if(!sideMenu.classList.contains("showSideMenu")){
-        sideMenu.classList.add("showSideMenu");
-    }else{
-        sideMenu.classList.remove("showSideMenu");
-    }
-    displayBackDrop();
-}
+   });
