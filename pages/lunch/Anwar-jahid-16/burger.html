@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <title>Lunch Recipe</title>
-     <link rel="icon" href="img/FoodTalkLogo.png">
-     
-    <!-- Css link -->
-    <link rel = "stylesheet" href = "style.css" >
-
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Chicken Burger Recipe</title>
 </head>
 <body>
+     <!-- Rey's Nav Bar -->
     <div class="pageBackDrop" onclick="clickedBackDrop()"></div>
         <div class="pageHeader">
             <div class="headerTitle">
@@ -29,73 +28,24 @@
                 <div></div>
                 <div></div>
             </div>
-            <div class="logo">
-                <img src="../../../images/FoodTalkLogo.png">
-                
-            </div>
-            <!--menu item-->
-            <ul>
-                <li>
-                    <a href="#" class="active">
-                        <span class="icon"><i class="fas fa-home"></i></span>
-                        <span class="item">Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-database"></i></span>
-                        <span class="item">About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-utensils"></i></span>
-                        <span class="item">Recipes</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-envelope"></i></span>
-                        <span class="item">Contact</span>
-                    </a>
-                </li>
-            </ul>                       
         </div>
-        </div>
-    <div class="container">
-        <div class= content>
-            <h2 class = title>Chicken Burgers</h2>
-            
-                <div class="content_info">
-                    <div class="box">
-                        <h3>Calories: </h3>
-                        <p>
-                            600
-                        </p>
-                    </div>
-                    <div class="box">
-                        <h3>Cook Time: </h3>
-                        <p>
-                            40 min
-                    </div>
 
-                    <div class="box">
-                        </p>
-                        <h3>Yield: </h3>
-                        <p>
-                            4 servings
-                        </p>    
-                    </div>
-                    
-                </div>                
-            
-            <div class="image">
-                <img src = "../Anwar-jahid-16/images/chicken_burger.jpg">  
-            </div> 
+        <!-- Burger Content  -->
+        <div  class="container">
+
+        <h1 class="h1_16">Chicken burger</h1>
+        <!-- <h4 class="h4_16"><span>by</span>: Anwar Jahid<span> Jan 2022 </span></h4> -->
+        <img id='recipe_pic' src="./Images/chicken_burger.png">
+        <p>When you are craving a burger, but want a healthier option that doesn't sacrifice the juiciness of a burger or the delicious taste.
+            <br>A Chicken Burger is a great option that is not only healthy but also tastes amazing.  </p>
+        <div class="info_bar">
+            <li>Calories:<br> 600</li>
+            <li>Total time:<br> 40 min</li>
+            <li>Yield:<br> 4 servings</li>
         </div>
-        <div class="container_ingredients">
-            <h2 class = title_ingredients>ingredients:</h2>
-            <div class="text_ingredients">
+        <div class="recipe">
+            <h2 class="h2_16">Ingreedients:</h2>
+            <ul class="ingredients">
                 <li>1 1/2 lb. ground chicken</li>
                 <li>3/4 tsp. smoked paprika</li>
                 <li>1 clove garlic, minced</li>
@@ -108,14 +58,10 @@
                 <li>1 avocado, thinly sliced</li>
                 <li>1/4 small red onion, thinly sliced</li>
                 <li>1 jalapeño, thinly sliced</li>
-                <li>4 brioche burger buns, split and  toasted</li>
-
-            </div>
+                <li>4 brioche burger buns, split and lightly toasted</li>
         </div>
-
-        <div class="container_text">
-            <div class="text">
-                <h2>Directions: </h2>
+        <h2 class="h2_16">Directions:</h2>
+            <ul class="directions">
                 <li>In a large bowl, combine chicken, paprika, garlic, and green onions, 
                     and season with salt and pepper. Divide mixture into 4 patties. </li>
                 <li>In a large skillet over medium heat, heat oil. 
@@ -123,20 +69,19 @@
                     registers 165°, 8 to 10 minutes.
                     Top with cheddar, cover, and cook until just melted, 2 minutes. Remove from heat and transfer patties to a plate. </li>
                 <li>Stack lettuce, coleslaw, chicken burgers, avocado, red onion, jalapeño, and more coleslaw on top of bottom buns. </li>
-
-            </div>
+            </ul>
+            <h2 class="h2_16">Nutritional Content:</h2>
+    <div class="nutrition">
+        <li>Carbohydrates: 46g </li>
+        <li>Protein: 24g</li>
+        <li>Saturated Fat: 7g</li>
+        <li>Cholesterol: 65mg</li>
+        <li>Sodium: 1390mg</li>
+        <li>Sugar: 4g</li>
+        <li>Vitamin A: 0</li>
+        <li>Iron: 0mg</li>
         </div>
 
-        <div class="container_step">
-           
-                <h2>Nutritional content:</h2>
-                <p>Carbohydrates: 46g <br> Protein: 24g <br> Fat: 39g <br> Saturated Fat: 7g <br> Cholesterol: 65mg <br> Sodium: 1390mg <br>Sugar: 4g <br> Vitamin A: 0 <br> Iron: 0mg</p>
-
-            
-             
-        </div>         
-    </div>
-
-</body>
     <script src="script.js"></script>
+</body>
 </html>
