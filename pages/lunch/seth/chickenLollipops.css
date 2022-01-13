@@ -1,0 +1,185 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Verdana', sans-serif;
+	font-size: 1rem;
+    background-color: coral;
+}
+
+/* Styling for the page header provided by Rey H. Flores Hernandez*/
+.pageBackDrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+    display: none;
+}
+.displayBackDrop{
+    display: block;
+}
+
+.pageHeader{
+    width: 100vw;
+    height: 60px;
+    background-color: #1f2628;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    user-select: none;
+}
+
+.headerTitle{
+    height: 100%;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    color: #e2f9ff;
+}
+
+.headerTitle > h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.headerAccount{
+    width: 220px;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+.headerAccount > button{
+    height: 40px;
+    width: 80px;
+    border: none;
+    background-color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+    outline: 0;
+}
+.headerAccount > button:hover{
+    background-color: #fffdd0;
+    opacity: 1;
+}
+
+/* --------------------------Side Menu --------------------- */
+
+.sideMenu{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    left: -300px;
+    z-index: 10;
+    transition: left 0.5s ease;
+
+    background-color: rgb(24, 22, 22);
+}
+.showSideMenu{
+    left: 0;
+}
+
+.headerMenuBtn{
+    width: 60px;
+    height: fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+    position: absolute;
+    right: -60px;
+}
+.headerMenuBtn > div{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 4.5px;
+}
+.headerMenuBtn:hover{
+    background-color: #ffffff;
+}
+.headerMenuBtn:hover > div{
+    background-color: black;
+}
+
+/* End of Header */
+
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+.main {
+	background: #fff;
+	margin: 4em auto;
+	width: 90%;
+	max-width: 496px;
+}
+
+
+article {
+    padding: 1.25em 1.5em;
+}
+
+ul {
+    list-style: none;
+    margin: 0.5em 0 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-left: auto;
+    line-height: auto;
+}
+
+span:nth-of-type(2) {
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    font-weight: 300;
+    vertical-align: middle;
+    color: #838689;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 300;
+    font-size: em(28);
+    color: #222222;
+}
+
+p {
+    margin: 1.25em 0;
+    font-size: em(13);
+    font-weight: 400;
+    color: #222222;
+}
+
+span {
+    font-weight: 700;
+    color: #000000;
+}
+
+
+.ingredients {
+    margin: 2em 0 0.5em;
+}
+    
