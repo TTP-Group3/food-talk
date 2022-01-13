@@ -2,24 +2,24 @@ function changeHeart() {
   // func for heart icon
   var heartId = document.getElementById("heart");
   // initializing var heartId to 'heart' id in html file
-  if (heartId.src.match("imgs/heart-regular.svg")) {
+  if (heartId.src.match("/static/images/recipes/heart-regular.svg")) {
     // if src of heart img is regular then change to solid
-    heartId.src = "imgs/heart-solid.svg";
+    heartId.src = "/static/images/recipes/heart-solid.svg";
   } else {
     // change back to regular
-    heartId.src = "imgs/heart-regular.svg";
+    heartId.src = "/static/images/recipes/heart-regular.svg";
   }
 }
 function changeComment() {
   // func for comment icon
   var commentId = document.getElementById("comment");
   // initializing var commentId to 'comment' id in html file
-  if (commentId.src.match("imgs/comment-regular.svg")) {
+  if (commentId.src.match("/static/images/recipes/comment-regular.svg")) {
     // if src of comment img is regular then change to solid
-    commentId.src = "imgs/comment-solid.svg";
+    commentId.src = "/static/images/recipes/comment-solid.svg";
   } else {
     // change back to regular
-    commentId.src = "imgs/comment-regular.svg";
+    commentId.src = "/static/images/recipes/comment-regular.svg";
   }
 }
 function show_n_hide() {
