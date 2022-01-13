@@ -253,7 +253,7 @@ body{
     background-size: cover;
 }
 #recipe_12{
-    background: url(../images/recipes/chicken_burger.jpg);
+    background: url(static/images/recipes/chicken_burger.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
