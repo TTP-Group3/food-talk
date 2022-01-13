@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Black Mushroom Rice</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styling.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="pageHeader">
+      <div class="headerTitle">
+        <h1>Food Talk</h1>
+      </div>
+    </div>
+
+    <div class="food_container">
+        <img class="black_mushroom_rice_img" style="margin-right: 250px;" src="imgs/black_mushroom_rice.jpg" alt="img">
+        <div class="right-col">
+            <h1>Black Mushroom Rice</h1>
+              <p><b><u> Ingredients </u></b><br>
+        <span>&#8226;</span>2 cups Long Grain White Rice yellow if preferred, good brand rice.<br>
+        <span>&#8226;</span>1 cup Djon-Djon dried mushroom sold in Haitian Grocery Stores.<br>
+        <span>&#8226;</span>4½ cups Water.<br>
+        <span>&#8226;</span>1 cup Baby Lima Beans or Greens Peas frozen and then thawed.<br>
+        <span>&#8226;</span>3 tablespoons Olive Oil.<br>
+        <span>&#8226;</span>2 cloves Garlic minced or finely chopped.<br>
+        <span>&#8226;</span>1 teaspoon Thyme leaves only.<br>
+        <span>&#8226;</span>2 Scallions stalks finely chopped.<br>
+        <span>&#8226;</span>¼ cup Green Pepper finely chopped.<br>
+        <span>&#8226;</span>4 Whole Cloves.<br>
+        <span>&#8226;</span>1½ tablespoon Chicken Bouillon powder.<br>
+        </p>
+        </div>
+
+        <div id="dialog" style="display: none;" class="comment_section">
+          <input type="user_text" id="comment_box" placeholder="Enter comment">
+          <button id="postBtn">Post</button>
+          <ul id="unordered_list"></ul>
+        </div>
+    </div>
+    <div class="middle_container">
+      <div>
+     <button id="stepsBtn" onclick="show_n_hide2()"class="stepsBtnDesign">Steps</button>
+    </div>
+    <div>
+      <button id="tipsBtn" onclick="show_n_hide3()"class="tipsBtnDesign">Useful Tips</button>
+    </div>
+    <div>
+      <a href="https://www.youtube.com/watch?v=NPUPi8sq9Z4" target="_blank" rel="noopener noreferrer"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
+    </div>
+      <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
+      <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
+    </div>
+    <div class="flex_container">
+    <div id="steps" style="display: none;" class="steps_container">
+      <h1>Steps</h1>
+      <p><li>Step 1: Clean mushrooms by removing any dirt and soak it.</li><br>
+        <li>Step 2: When ready to cook the rice, transfer the mushrooms and liquid to a saucepan and bring to a boil.</li><br>
+        <li>Step 3: Let boil for about 5 minutes at medium high heat then remove from stove (Do not cover saucepan or the liquid will spill over while boiling).</li><br>
+        <li>Step 4: Drain and set aside. Only the liquid will be used to cook the rice.</li><br>
+        <li>Step 5: In another large pot or pan, heat oil. Add garlic, scallions, thyme, cloves and green pepper.</li><br>
+        <li>Step 6: Let mixture fry for about 1 minutes. Add thawed green peas or baby lima beans and chicken bouillon powder. Stir to mix well.</li><br>
+        <li>Step 7: Add mushroom water to pan. Add salt and pepper to taste if necessary. Once water starts to boil, add Rice.</li><br>
+        <li>Step 8: Gently stir. Do not over stir. When water has almost evaporated and you only see the ingredients, lower heat and cover. Simmer for 15 to 20 minutes or until rice is fully cooked and still grainy</li><br>
+      </p>
+    </div>
+    <div id="tips" style="display: none;" class="tips_container">
+      <h1>Useful Tips</h1>
+      <p><li>Soak mushrooms overnight for the best result.</li><br>
+        <li>If adding shrimp or lobster, clean and lightly season seafood first and add before simmering.</li><br>
+        <li>Do not over mix; the rice will not be grainy.</li><br>
+        <li>Use long-grain Rice.</li><br>
+    </p>
+    </div>
+  </div>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
