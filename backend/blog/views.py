@@ -56,3 +56,6 @@ def spaghetti(request):
 
 def spaghetti(request):
     return render(request, 'blog/chicken.html')
+
+def spaghetti(request):
+    return render(request, 'blog/coconut.html')
