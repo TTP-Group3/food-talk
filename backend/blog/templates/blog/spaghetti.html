@@ -33,7 +33,7 @@
         <!-- I also made this recipe before slightly different as well, so the recipe below is not exactly 100% as the source -->
         <!-- This div contains the title of the food, the image of the food, and the ingredients -->
         <div class="food_container">
-            <img class="spaghetti_carbonara_img" style="margin-right: 250px;" src="carbonara.jpeg" alt="img">
+            <img class="spaghetti_carbonara_img" style="margin-right: 250px;" src="{% static 'images/recipes/spagettiCarbonara.jpeg' %}" alt="img">
             <div class="right-col">
                 <h1 style = "margin-bottom: 5vh; margin-top: 10vh;">Spaghetti Carbonara </h1>
                 <p><b><u> Ingredients </u></b><br>
@@ -60,16 +60,16 @@
         -->
         <div class="middle_container">
             <div>
-                <button id="stepsBtn" onclick="toggleVisibility('steps')" class="stepsBtnDesign">Steps</button>
+                <button id="stepsBtn" onclick="show_n_hide2()" class="stepsBtnDesign">Steps</button>
             </div>
             <div>
-                <button id="tipsBtn" onclick="toggleVisibility('tips')" class="tipsBtnDesign">Useful Tips</button>
+                <button id="tipsBtn" onclick="show_n_hide3()" class="tipsBtnDesign">Useful Tips</button>
             </div>
             <div>
                 <a href="https://www.youtube.com/watch?v=593WWQPGtYY"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
             </div>
-            <img id="heart" onclick="toggleSolid(this.id)" class="heart_icon" src="{% static 'images/recipes/heart-regular.svg' %}" alt="heart icon">
-            <img id="comment" onclick="toggleVisibility('dialog'); toggleSolid(this.id);" class="comment_icon" src="{% static 'images/recipes/comment-regular.svg' %}" alt="comment icon">
+            <img id="heart" onclick="changeHeart()" class="heart_icon" src="{% static 'images/recipes/heart-regular.svg' %}" alt="heart icon">
+            <img id="comment" onclick="show_n_hide(); changeComment()" class="comment_icon" src="{% static 'images/recipes/comment-regular.svg' %}" alt="comment icon">
         </div>
 
         <!-- This div actually contains the instructions/steps needed to create the dish.
@@ -103,6 +103,6 @@
             </div>
         </div>
 
-        <script src="{% static 'script/dinner.js' %} async defer"></script>
+        <script src="{% static 'script/dinner.js' %}" async defer></script>
     </body>
 </html>
