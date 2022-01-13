@@ -1,71 +1,41 @@
-function changeHeart() {
-  // func for heart icon
-  var heartId = document.getElementById("heart");
-  // initializing var heartId to 'heart' id in html file
-  if (heartId.src.match("imgs/heart-regular.svg")) {
-    // if src of heart img is regular then change to solid
-    heartId.src = "imgs/heart-solid.svg";
+//////////////////////////////////////////////////////////////////
+// script.js - Spaghetti Carbonara
+//
+// January 13, 2022
+// - Adapted from Justin's javascript code in Pastelon Recipe
+// - Refactored and commented by ilan rodriguez
+//////////////////////////////////////////////////////
+
+// This function finds the reference of a given object name and swaps between its respective solid and hollow icons
+function toggleSolid(objectName) {
+  var objectId = document.getElementById(objectName);
+
+  if (objectId.src.match(`imgs/${objectName}-regular.svg`)) { // if the object points to the hollow image
+    objectId.src = `imgs/${objectName}-solid.svg`;            // make it point to the solid image
   } else {
-    // change back to regular
-    heartId.src = "imgs/heart-regular.svg";
+    objectId.src = `imgs/${objectName}-regular.svg`;          // else make it point back to the hollow image
   }
 }
-function changeComment() {
-  // func for comment icon
-  var commentId = document.getElementById("comment");
-  // initializing var commentId to 'comment' id in html file
-  if (commentId.src.match("imgs/comment-regular.svg")) {
-    // if src of comment img is regular then change to solid
-    commentId.src = "imgs/comment-solid.svg";
+
+// This function finds the reference of a given object name and toggles its visibility
+function toggleVisibility(objectName) {
+  var objectId = document.getElementById(objectName); // get a reference to the object
+
+  if (objectId.style.display == "none") {             // if the object is hidden,
+    objectId.style.display = "block";                 // then make the object visible
   } else {
-    // change back to regular
-    commentId.src = "imgs/comment-regular.svg";
+    objectId.style.display = "none";                  // else make it invisible
   }
 }
-function show_n_hide() {
-  // func to display the comment box
-  if (document.getElementById("dialog").style.display == "none") {
-    document.getElementById("dialog").style.display = "block";
-    // when display is set to none then we will display block...dialog will reappear once we click on the chat icon
-  } else {
-    document.getElementById("dialog").style.display = "none";
-    // display no div
-  }
-  return false;
-}
-var postBtn = document.getElementById("postBtn");
+
+// Since we are not modifying this reference, make it const
+const postBtn = document.getElementById("postBtn");
+
+// Add an event listener to the button and execute a lambda function
 postBtn.addEventListener("click", function () {
-  // using an event listener so that whenever I click...func is called
-  var value = document.getElementById("comment_box").value;
-  // initializing var value to return the value the user types
-  var li = document.createElement("li");
-  // initializing var li to new element 'li'
-  var text = document.createTextNode(value);
-  // creating a node for every text. text is the node...value is the data
-  li.appendChild(text);
-  // appending input text to our newly created list (li)
-  document.getElementById("unordered_list").appendChild(li);
-  // lastly...appending the list to an unordered list
+  const value = document.getElementById("comment_box").value;      // get the raw text in the comment box
+  const text = document.createTextNode(value);                     // create a TextNode object with that raw text
+  var li = document.createElement("li");                           // create a new list item
+  li.appendChild(text);                                            // append TextNode into list item
+  document.getElementById("unordered_list").appendChild(li);       // insert this list item into the comment section "unordered_list"
 });
-function show_n_hide2() {
-  // func to display the steps container
-  if (document.getElementById("steps").style.display == "none") {
-    document.getElementById("steps").style.display = "block";
-    // when display is set to none then we will display block...steps div will reappear once we click on the steps button
-  } else {
-    document.getElementById("steps").style.display = "none";
-    // display no div
-  }
-  return false;
-}
-function show_n_hide3() {
-  // func to display the tips container
-  if (document.getElementById("tips").style.display == "none") {
-    document.getElementById("tips").style.display = "block";
-    // when display is set to none then we will display block...tips div will reappear once we click on the tips button
-  } else {
-    document.getElementById("tips").style.display = "none";
-    // display no div
-  }
-  return false;
-}

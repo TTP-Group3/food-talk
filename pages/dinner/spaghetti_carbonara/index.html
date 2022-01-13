@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- This tells the browser the type text encoding we are using in this Document -->
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Spaghetti Carbonara Recipe</title>
+        <!-- Page Specific Information when viewed in the history panel and browser tab -->
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="styling.css" />
@@ -15,12 +17,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
     </head>
     <body>
+        {% include 'blog/header.html' %}
+
+        <!-- REMOVED, this was the title for the page on the navbar
         <div class="pageHeader">
             <div class="headerTitle">
                 <h1>Food Talk</h1>
             </div>
         </div>
+        -->
 
+        <!--- This div contains the title of the food, the image of the food, and the ingredients -->
         <div class="food_container">
             <img class="spaghetti_carbonara_img" style="margin-right: 250px;" src="imgs/spaghetti_carbonara.jpeg" alt="img">
             <div class="right-col">
@@ -41,35 +48,48 @@
             </div>
         </div>
 
+        <!-- This div contains the 5 interactive buttons seen on the page
+            One controls the heart/like icon, the other opens the comment section
+            The steps Button shows the instructions for the recipe
+            The tips button shows the author's tips when cooking this recipe
+            The Watch Video button takes you to a Youtube video that shows the recipe being done
+        -->
         <div class="middle_container">
             <div>
-                <button id="stepsBtn" onclick="show_n_hide2()"class="stepsBtnDesign">Steps</button>
+                <button id="stepsBtn" onclick="toggleVisibility('steps')" class="stepsBtnDesign">Steps</button>
             </div>
             <div>
-                <button id="tipsBtn" onclick="show_n_hide3()"class="tipsBtnDesign">Useful Tips</button>
+                <button id="tipsBtn" onclick="toggleVisibility('tips')" class="tipsBtnDesign">Useful Tips</button>
             </div>
             <div>
                 <a href="#"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
             </div>
-            <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
-            <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
+            <img id="heart" onclick="toggleSolid(this.id)" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
+            <img id="comment" onclick="toggleVisibility('dialog'); toggleSolid(this.id);" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
         </div>
 
+        <!-- This div actually contains the instructions/steps needed to create the dish.
+            The instructions being the recipe itself.
+        -->
         <div class="flex_container">
             <div id="steps" style="display: none;" class="steps_container">
                 <h1>Steps</h1>
                 <p>
                     <li>Step 1: Place a large pot of water on the stove and add salt to it.<li><br><br>
-                            <li>Step 2: Get a separate bowl and whisk the eggs and add salt, black pepper, and some pecorino to it.</li><br><br>
-                            <li>Step 3: Let the water boil.</li><br><br>
-                            <li>Step 4: Get a separate frying pan and cook the bacon/ham cubes with or without oil until crisp and dark.</li><br><br>
-                            <li>Step 5: Now add the Spaghetti to the boiling water and keep it until it is firm or al-dente.</li><br><br>
-                            <li>Step 6: Keep 1 cup of the pasta water and drain the pot of the rest of the water.</li><br><br>
-                            <li>Step 7: Reheat the bacon/ham/guanciale on the frying pan if necessary.</li><br><br>
-                            <li>Step 8: Serve some of the pasta in a serving bowl and add the egg-cheese-salt-pepper mixture and transfer the bacon/ham/guanciale from the skillet to the serving bowl.</li><br><br>
-                            <li>Step 9: Gently stir.</li><br><br>
+                    <li>Step 2: Get a separate bowl and whisk the eggs and add salt, black pepper, and some pecorino to it.</li><br><br>
+                    <li>Step 3: Let the water boil.</li><br><br>
+                    <li>Step 4: Get a separate frying pan and cook the bacon/ham cubes with or without oil until crisp and dark.</li><br><br>
+                    <li>Step 5: Now add the Spaghetti to the boiling water and keep it until it is firm or al-dente.</li><br><br>
+                    <li>Step 6: Keep 1 cup of the pasta water and drain the pot of the rest of the water.</li><br><br>
+                    <li>Step 7: Reheat the bacon/ham/guanciale on the frying pan if necessary.</li><br><br>
+                    <li>Step 8: Serve some of the pasta in a serving bowl and add the egg-cheese-salt-pepper mixture and transfer the bacon/ham/guanciale from the skillet to the serving bowl.</li><br><br>
+                    <li>Step 9: Gently stir.</li><br><br>
                 </p>
             </div>
+
+            <!-- This div contains some tips by the author to inspire the reader to
+                take liberties with the recipe
+            -->
             <div id="tips" style="display: none;" class="tips_container">
                 <h1>Useful Tips</h1>
                 <p><li>Add as much salt as preferred for your tastes.</li><br>
