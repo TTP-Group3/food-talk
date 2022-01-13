@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Pastelón</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styling.css" />
@@ -21,29 +21,103 @@
       rel="stylesheet"/>
   </head>
   <body>
-    <div class="pageHeader">
+    {% include 'blog/header.html' %}
+    <!-- INCLUDING REY'S NAV WITH THIS HTML FILE -->
+    <!-- <div class="pageHeader">
       <div class="headerTitle">
         <h1>Food Talk</h1>
       </div>
-    </div>
-
+    </div> -->
     <div class="food_container">
         <img class="pastelón_img" style="margin-right: 250px;" src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/237368.jpg" alt="img">
         <div class="right-col">
-            <h1>Pastelón Recipe</h1>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit malesuada dapibus. Suspendisse mi neque, tristique nec nulla id, auctor blandit sapien. Sed eget dolor elementum nisi volutpat tristique. Cras volutpat, quam ac volutpat congue, quam quam aliquam eros, sit amet molestie mi tortor eu mauris. Integer euismod, lectus et varius aliquam, arcu felis convallis risus, sed pharetra urna sapien in leo. Donec quis ex in mi maximus dictum vitae et est. Donec vitae auctor nulla. Fusce arcu sapien, volutpat sed leo eget, aliquet fermentum magna. Donec cursus et risus ac facilisis. Cras tristique lacus sem, ut rhoncus mauris egestas et. Sed fermentum elementum urna, sed aliquet quam scelerisque quis. Vivamus in turpis metus.
-              </p>
+          <!-- container made for all the text -->
+            <h1>Pastelón</h1>
+              <p><b><u> Ingredients </u></b><br>
+        <span>&#8226;</span>1 small bunch fresh cilantro<br>
+        <!-- <span>&#8226;</span> is the ASCII notation for a bullet point.
+             making this list of ingredients into <li> was giving me css problems.-->
+        <span>&#8226;</span>1 small bunch fresh culantro<br>
+        <span>&#8226;</span>1 red bell pepper, small , roughly chopped<br>
+        <span>&#8226;</span>1 small green bell pepper, seeded and roughly chopped<br>
+        <span>&#8226;</span>1 medium head garlic, cloves seperated and peeled<br>
+        <span>&#8226;</span>1 teaspoon dried oregano<br>
+        <span>&#8226;</span>½ teaspoon ground cumin<br>
+        <span>&#8226;</span>1 ¼ cups canola oil, divided<br>
+        <span>&#8226;</span>5 pimento-stuffed spanish olives, thinly sliced into rounds<br>
+        <span>&#8226;</span>1 lb ground beef<br>
+        <span>&#8226;</span>½ teaspoon kosher salt, plus more to taste<br>
+        <span>&#8226;</span>2 teaspoons dried adobo seasoning, divided<br>
+        <span>&#8226;</span>1 ¼ teaspoons sazon goya seasoning powder, with saffron<br>
+        <span>&#8226;</span>1 can tomato sauce<br>
+        <span>&#8226;</span>4 very ripe plantains<br>
+        <span>&#8226;</span>3 cups shredded mozzarella cheese, divided<br>
+        <span>&#8226;</span>2 large eggs<br>
+        </p>
+        <!-- container that contains ingredients, image and the comment box -->
+        <!-- https://tasty.co/recipe/pastelon -->
         </div>
-        <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
-        <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
-        
+
         <div id="dialog" style="display: none;" class="comment_section">
+          <!-- setting the div to diplay nothing b/c the chat icon is used to display it -->
           <input type="user_text" id="comment_box" placeholder="Enter comment">
+          <!-- using placeholder instead of value so that "Enter comment" does not remain as actual text in input box -->
           <button id="postBtn">Post</button>
+          <!-- button for posting comment -->
           <ul id="unordered_list"></ul>
+          <!-- unordered list to store the list of comments -->
         </div>
+        <!-- dialog is the comment box -->
     </div>
+    <div class="middle_container">
+      <!-- container was created to avoid space issues in food_container -->
+      <div>
+     <button id="stepsBtn" onclick="show_n_hide2()"class="stepsBtnDesign">Steps</button>
+    </div>
+    <!-- creating individual divs for buttons for css positioning -->
+    <div>
+      <button id="tipsBtn" onclick="show_n_hide3()"class="tipsBtnDesign">Useful Tips</button>
+    </div>
+    <div>
+      <a href="https://www.youtube.com/watch?v=OO0nNf930nE" target="_blank" rel="noopener noreferrer"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
+    </div>
+    <!-- target="_blank" & rel="noopener noreferrer" opens up link in new tab rather then redirecting you to the link on your homepage -->
+      <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
+      <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
+    </div>
+    <!-- onclick event for both icons. heart icon changes images. comment icon changes images and opens up comment box in food_container -->
+    <div class="flex_container">
+      <!-- container created to have steps and tips container side by side with the flex display feature -->
+    <div id="steps" style="display: none;" class="steps_container">
+      <h1>Steps</h1>
+      <p><li>Step 1: To the bowl of a food processor, add the cilantro, culantro, onion, red and green bell peppers, garlic, oregano, and cumin. Pulse until combined. The sofrito should have the consistency of a tapenade.</li><br>
+        <li>Step 2: Heat ¼ cup (60 ml) of canola oil in a large pan over medium heat. Once the oil is shimmering, add the sofrito and fry, stirring constantly, until deepened in color but not brown, about 3 minutes. Add the olives to the pan and stir to combine.</li><br>
+        <li>Step 3: Add the ground beef to the pan and cook until no longer pink, about 7 minutes. Season with the ½ teaspoon salt.</li><br>
+        <li>Step 4: Add 1 teaspoon of adobo seasoning, the Sazón seasoning, and the tomato sauce and stir to combine. Cook, stirring occasionally, until most of the liquid is absorbed into the meat, about 7 minutes. Transfer the beef mixture to a medium bowl with a slotted spoon, discarding any excess liquid. Wipe out the pan with a paper towel and set aside.</li><br>
+        <li>Step 5: Peel the plantains, cut in half crosswise, then slice each half lengthwise to get 4 thin slices.</li><br>
+        <li>Step 6: Heat the remaining cup of canola oil in the same pan over medium-high heat until the oil starts to shimmer. Test one plantain slice in the oil--if it bubbles and sizzles, the oil is ready.</li><br>
+        <li>Step 7: Fry the plantains in batches until they are lightly browned on the edges and tender in the centers, 4–5 minutes, turning occasionally with a fork. Transfer to a paper towel-lined plate to drain. Season on both sides with salt.</li><br>
+        <li>Step 8: Preheat the oven to 350°F (180°C).</li><br>
+        <li>Step 9: Arrange a single layer of plantains in the bottom of an 8-inch square baking dish. Using a slotted spoon, top with about half of the meat mixture. Sprinkle 1 cup of mozzarella over the meat sauce. Repeat with more plantains, the remaining meat sauce, and another cup of mozzarella. Finish with the remaining plantains.</li><br>
+        <li>Step 10: In a medium bowl, beat the eggs with the remaining teaspoon of adobo seasoning.</li><br>
+        <li>Step 11: Pour the egg mixture over the plantains, then cover the baking dish with foil.</li><br>
+        <li>Step 12: Bake the pastelón until the eggs are set and the cheese is bubbly, about 25 minutes. Remove from oven and turn the oven to broil. Uncover the dish and sprinkle the remaining cup of mozzarella over the top. Broil for 5 minutes, or until cheese on top is golden brown. Let rest for 10 minutes before serving.</li><br>
+      </p>
+      <!-- container contains preparation -->
+      <!-- https://tasty.co/recipe/pastelon -->
+    </div>
+    <div id="tips" style="display: none;" class="tips_container">
+      <h1>Useful Tips</h1>
+      <p><li>Make sure you have ripe plantains, much sweeter than unripe green plantains (if you have them while they're still green; just let them sit out on your 
+        counter until ripe).
+      </li><br>
+        <li>Prep time is usually around 30-minutes. Cook time is about 1-hour and 45-minutes, but all the depends on how big/small you make your pastelón.</li><br>
+        <li>The Pastelón dish/name comes from Puerto Rico. They're many other countries that make this dish with their own touch.
+        </li><br>
+    </p>
+    <!-- container contains useful tips -->
+    </div>
+  </div>
     <script src="script.js" async defer></script>
   </body>
 </html>

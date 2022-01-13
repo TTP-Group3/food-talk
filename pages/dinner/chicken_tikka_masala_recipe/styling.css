@@ -11,7 +11,8 @@ body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
-.pageHeader {
+/* REMOVED REY'S NAV */
+/* .pageHeader {
   width: 100vw;
   height: 60px;
   background-color: #1f2628;
@@ -34,7 +35,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: italic;
   font-size: 35px;
-}
+} */
 .food_container {
   background-color: white;
   position: relative;
@@ -56,7 +57,7 @@ body {
   width: 100%;
 }
 .chicken_tikka_masala_img {
-  width: 400px;
+  width: 480px;
   height: 400px;
 }
 .food_container h1 {
@@ -214,7 +215,7 @@ body {
 }
 @media screen and (min-width: 1920px) {
 .chicken_tikka_masala_img {
-    width: 700px;
+    width: 780px;
     height: 700px;
 }
 .food_container p {
