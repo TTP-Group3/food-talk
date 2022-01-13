@@ -4,21 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='style.css'>
-    <title>Chicken Burger Recipe</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Lunch Recipe</title>
+     <link rel="icon" href="img/FoodTalkLogo.png">
+     
+    <!-- Css link -->
+    <link rel = "stylesheet" href = "style.css" >
+
 </head>
 <body>
+    <div class="pageBackDrop" onclick="clickedBackDrop()"></div>
+        <div class="pageHeader">
+            <div class="headerTitle">
+                <h1>Food Talk</h1>
+            </div>
+            <div class="headerAccount">
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Log In</button>
+                <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Sign Up</button>
+            </div>
+        </div>
+        <div class="sideMenu">
+            <div class="headerMenuBtn" onclick="showSideMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logo">
+                <img src="../../../images/FoodTalkLogo.png">
+                
+            </div>
+            <!--menu item-->
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-utensils"></i></span>
+                        <span class="item">Recipes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <span class="item">Contact</span>
+                    </a>
+                </li>
+            </ul>                       
+        </div>
+        </div>
+    <div class="container">
+        <div class= content>
+            <h2 class = title>Chicken Burgers</h2>
+            
+                <div class="content_info">
+                    <div class="box">
+                        <h3>Calories: </h3>
+                        <p>
+                            600
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3>Cook Time: </h3>
+                        <p>
+                            40 min
+                    </div>
 
-        <div  class="container16">
-        <h1 >Chicken burgers</h1>
-        <h4><span>by</span>: Anwar Jahid<span> Jan 2022 </span></h4>
-        <img id='recipe_pic16' src="./images/chicken_burger.jpg">
-        <p>When you are craving a burger, but want a healthier option that doesn't sacrifice the juiciness of a burger or the delicious taste.
-            <br>A Chicken Burger is a great option that is not only healthy but also tastes amazing.  </p>
-
-        <div class="recipe16">
-            <h2>Ingreedients:</h2>
-            <ul class="ingredients16">
+                    <div class="box">
+                        </p>
+                        <h3>Yield: </h3>
+                        <p>
+                            4 servings
+                        </p>    
+                    </div>
+                    
+                </div>                
+            
+            <div class="image">
+                <img src = "../Anwar-jahid-16/images/chicken_burger.jpg">  
+            </div> 
+        </div>
+        <div class="container_ingredients">
+            <h2 class = title_ingredients>ingredients:</h2>
+            <div class="text_ingredients">
                 <li>1 1/2 lb. ground chicken</li>
                 <li>3/4 tsp. smoked paprika</li>
                 <li>1 clove garlic, minced</li>
@@ -31,10 +108,14 @@
                 <li>1 avocado, thinly sliced</li>
                 <li>1/4 small red onion, thinly sliced</li>
                 <li>1 jalapeño, thinly sliced</li>
-                <li>4 brioche burger buns, split and lightly toasted</li>
+                <li>4 brioche burger buns, split and  toasted</li>
+
+            </div>
         </div>
-        <h2>Directions:</h2>
-            <ul class="directions16">
+
+        <div class="container_text">
+            <div class="text">
+                <h2>Directions: </h2>
                 <li>In a large bowl, combine chicken, paprika, garlic, and green onions, 
                     and season with salt and pepper. Divide mixture into 4 patties. </li>
                 <li>In a large skillet over medium heat, heat oil. 
@@ -42,9 +123,20 @@
                     registers 165°, 8 to 10 minutes.
                     Top with cheddar, cover, and cook until just melted, 2 minutes. Remove from heat and transfer patties to a plate. </li>
                 <li>Stack lettuce, coleslaw, chicken burgers, avocado, red onion, jalapeño, and more coleslaw on top of bottom buns. </li>
-            </ul>
+
+            </div>
         </div>
+
+        <div class="container_step">
+           
+                <h2>Nutritional content:</h2>
+                <p>Carbohydrates: 46g <br> Protein: 24g <br> Fat: 39g <br> Saturated Fat: 7g <br> Cholesterol: 65mg <br> Sodium: 1390mg <br>Sugar: 4g <br> Vitamin A: 0 <br> Iron: 0mg</p>
+
+            
+             
+        </div>         
     </div>
-    <script src=""></script>
+
 </body>
+    <script src="script.js"></script>
 </html>
