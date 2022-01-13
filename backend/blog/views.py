@@ -44,3 +44,6 @@ def lasagna(request):
 
 def protein_pancakes(request):
     return render(request, 'blog/protein_pancakes.html')
+
+def pastelon(request):
+    return render(request, 'blog/pastelon.html')
