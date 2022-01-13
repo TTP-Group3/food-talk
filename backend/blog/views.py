@@ -47,3 +47,6 @@ def protein_pancakes(request):
 
 def pastelon(request):
     return render(request, 'blog/pastelon.html')
+
+def spaghetti(request):
+    return render(request, 'blog/spaghetti.html')
