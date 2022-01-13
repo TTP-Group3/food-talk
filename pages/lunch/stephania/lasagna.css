@@ -1,0 +1,430 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+body{
+  margin: 0;
+  background-color: #f0fcff;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.pageBackDrop{
+position: fixed;
+width: 100vw;
+height: 100vh;
+z-index: 10;
+backdrop-filter: blur(2px);
+display: none;
+}
+.displayBackDrop{
+display: block;
+}
+
+.pageHeader{
+width: 100vw;
+height: 60px;
+background-color: #1f2628;
+position: fixed;
+top: 0;
+z-index: 9;
+user-select: none;
+}
+.headerTitle{
+height: 100%;
+width: fit-content;
+overflow: hidden;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+display: inline-flex;
+align-items: center;
+color: #e2f9ff;
+}
+.headerTitle > h1{
+font-family: 'Poppins', sans-serif;
+font-style: italic;
+font-size: 35px;
+}
+.headerAccount{
+width: 220px;
+height: 100%;
+float: right;
+margin-right: 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+align-content: center;
+justify-content: space-around;
+}
+
+.headerAccount > button{
+height: 40px;
+width: 80px;
+border: none;
+background-color: white;
+font-family: 'Poppins',sans-serif;
+font-size: 15px;
+opacity: 0.5;
+cursor: pointer;
+outline: 0;
+}
+.headerAccount > button:hover{
+background-color: #fffdd0;
+opacity: 1;
+}
+.logo{
+margin-bottom: 30px;
+text-align: center;
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.logo img{
+display:block;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin-top: 30px;
+}
+
+ul {
+margin-top: 30px;
+list-style-type: none;
+}
+
+ul li a{   
+text-decoration: none;
+display: block;
+padding: 13px 30px;
+border-bottom: 1px solid #10558d;
+color: rgb(241, 237, 237);
+font-size: 20px;
+position: relative;
+}
+
+ul li a .icon{
+color: #dee4ec;
+width: 30px;
+display: inline-block;
+}
+
+ul li a:hover,
+ul li a.active{
+color: #0c7db1;
+
+background:white;
+border-right: 2px solid rgb(5, 68, 104);
+}
+
+ul li a:hover .icon,
+ul li a.active .icon{
+color: #0c7db1;
+}
+
+ul li a:hover:before,
+ul li a.active:before{
+display: block;
+}
+
+
+/* ----------------------------- */
+
+/* Side Menu --------------------- */
+
+.sideMenu{
+position: fixed;
+height: 100vh;
+width: 300px;
+left: -300px;
+z-index: 10;
+transition: left 0.5s ease;
+
+background-color: rgb(24, 22, 22);
+}
+.showSideMenu{
+left: 0;
+}
+
+.headerMenuBtn{
+width: 60px;
+height: fit-content;
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+padding: 12px 0;
+cursor: pointer;
+position: absolute;
+right: -60px;
+}
+.headerMenuBtn > div{
+width: 40px;
+height: 3px;
+background-color: white;
+border-radius: 10px;
+margin: 4.5px;
+}
+.headerMenuBtn:hover{
+background-color: #ffffff;
+}
+.headerMenuBtn:hover > div{
+background-color: black;
+}
+
+/* content recipe design */
+
+.title{
+font-size: 35px;
+color: black;
+text-transform: uppercase;
+margin: 30px auto  50px;
+text-align: center;
+}
+.container{
+display:grid;
+grid-template-columns: repeat(2, 1fr);
+
+}
+/* content lasagna */
+.content{
+margin: 100px 0 30px 0 ;
+align-items: center;
+width: 900px;
+height: 800px;
+background: rgba(229, 229, 229, 0.7);
+padding: 10px;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+border-radius: 7px;
+transition: .3s;
+
+}
+
+.content_info{
+width: 90%; 
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 25px;
+margin: 0 0 0 30px;
+
+}
+.box{
+padding: 10px;
+box-shadow: 0 0 15px 0 #00000021;
+background-color: #fff;
+color: #181818;
+
+}
+.box h3{
+font-weight: 500;
+text-transform: uppercase;
+text-align:center;
+}
+.box p{
+text-align:center;
+font-size: 18px;
+}
+img{
+width: 90%;
+height: 450px;
+margin: 50px 0 30px 30px;
+
+
+}
+
+.container_text{
+
+align-items: center;
+width: 900px;
+height: 600px;
+background: rgba(50, 126, 90, 0.02);
+padding: 10px;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+border-radius: 7px;
+transition: .3s;
+
+}
+
+p{
+ font-size: 20px;
+}
+.text{
+margin: 30px 0 30px 30px;
+}
+
+.title_ingredients{
+font-size: 35px;
+color: black;
+text-transform: uppercase;
+text-indent: 90px;
+}
+.text_ingredients{
+text-indent: 100px;
+}
+.container_ingredients{
+margin: 100px 40px 0 0;
+width: 900px; 
+height: 800px;
+background: rgba(229, 229, 229, 0.7);
+padding: 10px;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+border-radius: 7px;
+transition: .3s;
+
+}
+.container_step{
+width: 900px;
+height: 600px;
+background: rgba(50, 126, 90, 0.02);
+padding: 10px;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+border-radius: 7px;
+transition: .3s;
+
+}
+.imagen_step img{
+width: 100%;
+height: 600px;
+margin: 0 0 0 0;
+}
+
+.nutrition{
+margin: 50px 90px 50px 50px;
+width: 1860px;
+height: 200px;
+
+background: rgba(229, 229, 229, 0.7);
+padding: 10px;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+border-radius: 7px;
+transition: .3s;
+
+}
+.title_nutrition{
+font-size: 35px;
+color: black;
+text-transform: uppercase;
+}
+
+/* responsive web section */
+@media screen and (max-width:1900px){
+
+.content{
+  margin: 100px;
+  width: 800px; 
+}
+
+.container_text{
+  margin: 0 0 0 100px;
+  width: 800px;
+ }
+
+ .container_ingredients{
+  width: 700px; 
+ }
+.container_step{
+  width: 700px;
+}
+
+.nutrition{
+  width: 1000px;
+  
+}
+}
+@media screen and (max-width:1700px){
+
+.container_ingredients{
+  width: 600px; 
+ }
+.container_step{
+  width: 600px;
+}
+
+}
+
+@media screen and (max-width:1600px){
+
+.content{
+  width: 500px; 
+}
+
+p{
+  font-size: 18px;
+}
+
+.container_text{
+  width: 500px;
+ }
+
+ .container_ingredients{
+  width: 400px; 
+ }
+.container_step{
+  width: 400px;
+}
+
+.nutrition{
+  width: 800px;
+  
+}
+}
+
+@media screen and (max-width:900px){
+
+.container{
+  display:grid;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+/* content lasagna */
+.content{
+  margin: 100px auto 0;
+  align-items: center;
+  width: 500px;
+}
+.container_text{
+  
+  margin: 100px auto 0;
+  align-items: center;
+  width: 500px;
+  height: 600px;
+
+ }
+
+ .container_ingredients{
+  margin: 100px auto 0;
+  align-items: center;
+  width: 500px;
+  height: 800px;
+
+
+ }
+.container_step{
+  margin: 100px auto 0;
+  align-items: center;
+  width: 500px;
+  height: 600px;
+}
+
+.nutrition{
+  margin: 100px auto 50px;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+}
+
+}
+
+
+
+
+
+/* footer design */
+
