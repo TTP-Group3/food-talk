@@ -9,7 +9,7 @@
         <!-- Page Specific Information when viewed in the history panel and browser tab -->
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="styling.css" />
+        <link rel="stylesheet" href="{% static 'style/dinner.css' %}" />
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -67,8 +67,8 @@
             <div>
                 <a href="https://www.youtube.com/watch?v=593WWQPGtYY"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
             </div>
-            <img id="heart" onclick="toggleSolid(this.id)" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
-            <img id="comment" onclick="toggleVisibility('dialog'); toggleSolid(this.id);" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
+            <img id="heart" onclick="toggleSolid(this.id)" class="heart_icon" src="{% static 'images/recipes/heart-regular.svg' %}" alt="heart icon">
+            <img id="comment" onclick="toggleVisibility('dialog'); toggleSolid(this.id);" class="comment_icon" src="{% static 'images/recipes/comment-regular.svg' %}" alt="comment icon">
         </div>
 
         <!-- This div actually contains the instructions/steps needed to create the dish.

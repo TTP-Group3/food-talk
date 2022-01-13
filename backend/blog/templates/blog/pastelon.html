@@ -6,7 +6,7 @@
     <title>Pastelón Recipe</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styling.css" />
+    <link rel="stylesheet" href="{% static 'style/dinner.css' %}" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +29,7 @@
       </div>
     </div> -->
     <div class="food_container">
-        <img class="pastelón_img" style="margin-right: 250px;" src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/237368.jpg" alt="img">
+      <img class="pastelón_img" style="margin-right: 250px;" src="{% static 'https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/237368.jpg' %}" alt="img">
         <div class="right-col">
           <!-- container made for all the text -->
             <h1>Pastelón</h1>
@@ -82,8 +82,8 @@
       <a href="https://www.youtube.com/watch?v=OO0nNf930nE" target="_blank" rel="noopener noreferrer"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
     </div>
     <!-- target="_blank" & rel="noopener noreferrer" opens up link in new tab rather then redirecting you to the link on your homepage -->
-      <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
-      <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
+    <img id="heart" onclick="changeHeart()" class="heart_icon" src="{% static 'images/recipes/heart-regular.svg' %}" alt="heart icon">
+      <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="{% static 'images/recipes/comment-regular.svg' %}" alt="comment icon">
     </div>
     <!-- onclick event for both icons. heart icon changes images. comment icon changes images and opens up comment box in food_container -->
     <div class="flex_container">

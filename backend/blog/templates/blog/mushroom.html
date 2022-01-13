@@ -7,7 +7,7 @@
     <title>Black Mushroom Rice Recipe</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styling.css" />
+    <link rel="stylesheet" href="{% static 'style/dinner.css' %}" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +31,7 @@
     </div> -->
 
     <div class="food_container">
-        <img class="black_mushroom_rice_img" style="margin-right: 250px;" src="imgs/black_mushroom_rice.jpg" alt="img">
+      <img class="black_mushroom_rice_img" style="margin-right: 250px;" src="{% static "images/recipes/black_mushroom_rice.jpg" %}" alt="img">
         <div class="right-col">
             <h1>Black Mushroom Rice</h1>
               <p><b><u> Ingredients </u></b><br>
@@ -65,8 +65,8 @@
     <div>
       <a href="https://www.youtube.com/watch?v=NPUPi8sq9Z4" target="_blank" rel="noopener noreferrer"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
     </div>
-      <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
-      <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
+    <img id="heart" onclick="changeHeart()" class="heart_icon" src="{% static "images/recipes/heart-regular.svg" %}" alt="heart icon">
+      <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="{% static "images/recipes/comment-regular.svg" %}" alt="comment icon">
     </div>
     <div class="flex_container">
     <div id="steps" style="display: none;" class="steps_container">
