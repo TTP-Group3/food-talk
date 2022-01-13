@@ -50,3 +50,6 @@ def pastelon(request):
 
 def spaghetti(request):
     return render(request, 'blog/spaghetti.html')
+
+def spaghetti(request):
+    return render(request, 'blog/mushroom.html')

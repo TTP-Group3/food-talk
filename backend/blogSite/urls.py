@@ -21,4 +21,5 @@ urlpatterns = [
     path('protein_pancakes/', views.protein_pancakes, name="protein_pancakes"),
     path('pastelong/', views.pastelon, name="pastelon"),
     path('spaghetti/', views.spaghetti, name="spaghetti"),
+    path('mushroom/', views.spaghetti, name="mushroom"),
 ]
