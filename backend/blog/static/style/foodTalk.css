@@ -253,7 +253,7 @@ body{
     background-size: cover;
 }
 #recipe_12{
-    background: url(static/images/recipes/chicken_burger.jpg);
+    background: url(../images/recipes/chicken_burger.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -269,6 +269,11 @@ body{
 }
 #recipe_15{
     background: url(../images/recipes/motehingar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recipe_16{
+    background: url(../images/recipes/coconut.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

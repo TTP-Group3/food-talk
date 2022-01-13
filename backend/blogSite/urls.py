@@ -5,7 +5,8 @@ from blog import views
 
 urlpatterns = [
     path('', views.index, name='home'),
-    path('logIn/', views.logIn, name="logIn"),
+    path('signin/', views.signin, name="logIn"),
+    path('signup/', views.signup, name="signup"),
     path('rasberry/', views.rasberry, name="raspberry"),
     path('burger/', views.burger, name="burger"),
     path('caldereta/', views.caldereta, name="caldereta"),

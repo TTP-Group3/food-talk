@@ -22,6 +22,7 @@
         display: inline-flex;
         align-items: center;
         color: #e2f9ff;
+        cursor:pointer;
     }
     .headerTitle > h1{
         font-family: 'Poppins', sans-serif;
@@ -56,20 +57,14 @@
         opacity: 1;
     }
 </style>
-<script>
-    userStorage = window.localStorage;
-    userLoggedIn = false;
-    if(localStorage.getItem('userName') !== null){
-        userLoggedIn = true;
-    }
-</script>
 
 <div class="pageHeader">
     <div class="headerTitle">
-        <h1>Food Talk</h1>
+        <h1 onclick="window.location.href='/'">Food Talk</h1>
     </div>
     <div class="headerAccount">
-        <button onclick="location.href='logIn/'">Log In</button>
-        <button onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">Sign Up</button>
+        <button onclick="location.href='signin/'">Log In</button>
+        <button onclick="location.href='signup/'">Sign Up</button>
     </div>
 </div>
+<!-- Designed and developed by Rey H. Flores Hernandez-->
