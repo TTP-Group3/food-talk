@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Food Talk | Log In</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'style/signup.css' %}">
+    </head>
+    <body>  
+        
+        <div class="loginContainer">
+            <div class="logoCont">
+                <img src="{% static 'images/pageCosmetics/mainLogo.png' %}">
+            </div>
+            <form class="loginForm" action="/signup" method="post">
+                <div class="inputCont">
+                    <h1>Username:</h1>
+                    <input type="text" name="userName" required>
+                </div>
+                <div class="inputCont">
+                    <h1>First Name:</h1>
+                    <input type="text" name="userName" required>
+                </div>
+                <div class="inputCont">
+                    <h1>Last Name:</h1>
+                    <input type="text" name="userName" required>
+                </div>
+                <div class="inputCont">
+                    <h1>Email:</h1>
+                    <input type="text" name="userName" required>
+                </div>
+                <div class="inputCont">
+                    <h1>Password:</h1>
+                    <input type="password" name="userPword" required>
+                </div>
+                <div class="inputCont">
+                    <h1>Confirm Password:</h1>
+                    <input type="text" name="userName" required>
+                </div>
+                <button type="submit">Log In</button>
+                <h1 class="signupText">Already a user? <span onclick="window.location.href='/signin'">Log In</span></h1>
+            </form>
+        </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>
+<!-- Designed and developed by Rey H. Flores Hernandez-->
