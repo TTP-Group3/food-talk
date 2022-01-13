@@ -47,7 +47,7 @@
          which can sometimes be a pain when zooming in/out but that's how
          I first learned. */
       display: flex;
-      margin-top: 2em;
+      margin-top: 10vh;
       width: 95vw;
       text-align: center;
       transition: 0.5s ease;
@@ -72,6 +72,7 @@
     .food_container h1 {
       font-size: 20pt;
       text-decoration: underline;
+      margin-bottom: 5vh;
     }
     .food_container p {
       margin-top: -15px;
@@ -176,8 +177,8 @@
     }
     .flex_container {
       display: flex;
-      margin-top: 50px;
-      margin-bottom: 5em;
+      margin-top: 1vh;
+      margin-bottom: 5vh;
     }
     .steps_container {
       background-color: white;
@@ -195,9 +196,11 @@
       font-size: 20pt;
       text-align: center;
       text-decoration: underline;
+      margin-bottom: 5vh;
     }
     .steps_container p {
       margin-top: -10px;
+      margin-left: 20px;
       font-size: 11pt;
     }
     .tips_container {
@@ -217,9 +220,11 @@
       font-size: 20pt;
       text-align: center;
       text-decoration: underline;
+      margin-bottom: 5vh;
     }
     .tips_container p {
       margin-top: -10px;
+      margin-left: 50vh;
       font-size: 11pt;
       text-align: left;
     }
