@@ -11,7 +11,8 @@ body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
-.pageHeader {
+/* REMOVED REY'S NAV */
+/* .pageHeader {
   width: 100vw;
   height: 60px;
   background-color: #1f2628;
@@ -34,7 +35,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: italic;
   font-size: 35px;
-}
+} */
 .food_container {
   background-color: white;
   position: relative;

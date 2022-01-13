@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Chicken Tikka Masala</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styling.css" />
@@ -21,11 +21,13 @@
       rel="stylesheet"/>
   </head>
   <body>
-    <div class="pageHeader">
+    {% include 'blog/header.html' %}
+    <!-- INCLUDING REY'S NAV WITH THIS HTML FILE -->
+    <!-- <div class="pageHeader">
       <div class="headerTitle">
         <h1>Food Talk</h1>
       </div>
-    </div>
+    </div> -->
 
     <div class="food_container">
         <img class="chicken_tikka_masala_img" style="margin-right: 250px;" src="imgs/chicken_tikka_masala.jpg" alt="img">
@@ -67,7 +69,7 @@
       <button id="tipsBtn" onclick="show_n_hide3()"class="tipsBtnDesign">Useful Tips</button>
     </div>
     <div>
-      <a href="#"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
+      <a href="https://www.youtube.com/watch?v=BOKdsepCrbc" target="_blank" rel="noopener noreferrer"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
     </div>
       <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
       <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">

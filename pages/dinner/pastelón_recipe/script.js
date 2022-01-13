@@ -23,10 +23,35 @@ function changeComment() {
   }
 }
 function show_n_hide() {
+  // func to display the comment box
   if (document.getElementById("dialog").style.display == "none") {
     document.getElementById("dialog").style.display = "block";
+    // when display is set to none then we will display block...dialog will reappear once we click on the chat icon
   } else {
     document.getElementById("dialog").style.display = "none";
+    // display no div
+  }
+  return false;
+}
+function show_n_hide2() {
+  // func to display the steps container
+  if (document.getElementById("steps").style.display == "none") {
+    document.getElementById("steps").style.display = "block";
+    // when display is set to none then we will display block...steps div will reappear once we click on the steps button
+  } else {
+    document.getElementById("steps").style.display = "none";
+    // display no div
+  }
+  return false;
+}
+function show_n_hide3() {
+  // func to display the tips container
+  if (document.getElementById("tips").style.display == "none") {
+    document.getElementById("tips").style.display = "block";
+    // when display is set to none then we will display block...tips div will reappear once we click on the tips button
+  } else {
+    document.getElementById("tips").style.display = "none";
+    // display no div
   }
   return false;
 }

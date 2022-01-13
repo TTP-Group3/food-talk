@@ -33,20 +33,6 @@ function show_n_hide() {
   }
   return false;
 }
-var postBtn = document.getElementById("postBtn");
-postBtn.addEventListener("click", function () {
-  // using an event listener so that whenever I click...func is called
-  var value = document.getElementById("comment_box").value;
-  // initializing var value to return the value the user types
-  var li = document.createElement("li");
-  // initializing var li to new element 'li'
-  var text = document.createTextNode(value);
-  // creating a node for every text. text is the node...value is the data
-  li.appendChild(text);
-  // appending input text to our newly created list (li)
-  document.getElementById("unordered_list").appendChild(li);
-  // lastly...appending the list to an unordered list
-});
 function show_n_hide2() {
   // func to display the steps container
   if (document.getElementById("steps").style.display == "none") {
@@ -69,3 +55,17 @@ function show_n_hide3() {
   }
   return false;
 }
+var postBtn = document.getElementById("postBtn");
+postBtn.addEventListener("click", function () {
+  // using an event listener so that whenever I click...func is called
+  var value = document.getElementById("comment_box").value;
+  // initializing var value to return the value the user types
+  var li = document.createElement("li");
+  // initializing var li to new element 'li'
+  var text = document.createTextNode(value);
+  // creating a node for every text. text is the node...value is the data
+  li.appendChild(text);
+  // appending input text to our newly created list (li)
+  document.getElementById("unordered_list").appendChild(li);
+  // lastly...appending the list to an unordered list
+});
