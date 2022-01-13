@@ -213,20 +213,20 @@ body {
 }
 }
 @media screen and (min-width: 1920px) {
-.black_mushroom_rice_img {
-    width: 700px;
-    height: 700px;
+.spaghetti_carbonara_img {
+    width: 625px;
+    height: 500px;
 }
 .food_container p {
     margin-left: 50px;
     text-align: left;
     margin-top: -15px;
     font-size: 17pt;
-    line-height: 210%;
+    line-height: 250%;
   }
   .middle_container {
     margin-left: 700px;
-    width: 58vw;  
+    width: 58vw;
   }
   .stepsBtnDesign {
     margin-left: -1010px;
