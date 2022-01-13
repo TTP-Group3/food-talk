@@ -65,7 +65,7 @@
                 <button id="tipsBtn" onclick="toggleVisibility('tips')" class="tipsBtnDesign">Useful Tips</button>
             </div>
             <div>
-                <a href="#"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
+                <a href="https://www.youtube.com/watch?v=593WWQPGtYY"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
             </div>
             <img id="heart" onclick="toggleSolid(this.id)" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
             <img id="comment" onclick="toggleVisibility('dialog'); toggleSolid(this.id);" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
@@ -102,6 +102,6 @@
             </div>
         </div>
 
-        <script src="script.js"></script>
+        <script src="{% static 'script/dinner.js' %} async defer"></script>
     </body>
 </html>
