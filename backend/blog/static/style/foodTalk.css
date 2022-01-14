@@ -1,4 +1,6 @@
-body{
+/* the body aspect of the page will take up the entire width of the screen and have a minimum height of the entire height of the page */
+/* settings the display of the body to flex and the direction to column allows items placed inside of it, to stack on top of each other*/
+body{                       
     margin: 0;
     background-color: #f0fcff;
     width: 100vw;
@@ -9,12 +11,13 @@ body{
     align-items: center;
     overflow-x: hidden;
 }
-
+/* the container with the class attribute contentPreview is a banner that contains the motto of our webpage and which has its background set to a beutiful image*/
 .contentPreview{
     width: 95vw;
     height: 500px;
     margin-top: 80px;
 }
+/* I created a before object of the container so that I could position the image perfectly ontop of the container */
 .contentPreview::before{
     content: "";
     background: url(../images/indexContent/contentPreviewMid.jpg);
@@ -27,7 +30,7 @@ body{
     opacity: 0.9;
     z-index: -1;
 }
-
+/* previewText is the text that is inside of the page banner which will load each character individually, craeting a typewriting effect */
 .previewText{
     height: 100%;
     width: 800px;
@@ -52,10 +55,12 @@ body{
     overflow: hidden;
     white-space: nowrap;
 }
+/* Span allows me to highlight certain keywords in the motto */
 .previewText > h1 > span{
     color: red;
 }
 
+/* A container that houses the recipes filter buttons */
 .filterContainer{
     width: 900px;
     height: 130px;
@@ -63,7 +68,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+/* A container which houses the text to ask the user which filter they would like to use */
 .filterBanner{
     width: 100%;
     height: 65px;
@@ -84,6 +89,7 @@ body{
     margin: 0 20px;
 }
 
+/* The styling of the recipes filter buttons */
 .filterBtns{
     width: 100%;
     height: calc(100% - 65px);
@@ -114,6 +120,7 @@ body{
 
 /* Recipe Container ------------------------------- */
 
+/* A grid that will house each recipe item */
 .recipeContainer{
     width: 95vw;
     margin: 80px 0 80px 0;
@@ -124,6 +131,7 @@ body{
     grid-row-gap: 40px;
 }
 
+/* A recipeItem is a container that will contain the name, descripton, and image of each recipe */
 .recipeItem{
     position: relative;
     height: 350px;
@@ -131,33 +139,6 @@ body{
 }
 .displayRecipe{
     display: block;
-}
-
-.recipeRating{
-    width: 90px;
-    height: 50px;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.recipeRating > img{
-    width: 30px;
-    height: auto;
-    margin: 0;
-    margin-left: 10px;
-}
-.recipeRating > h1{
-    margin: 0;
-    margin-left: 6px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
-    width: 40px;
-    overflow: hidden;
-}
-.recipeItem:hover .recipeRating > h1{
-    color: white;
 }
 
 .recipeDescr{
@@ -176,8 +157,6 @@ body{
     margin: 45px 0 10px 0;
     text-align: center;
     overflow: hidden;
-    /* white-space: nowrap;
-    text-overflow: ellipsis; */
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     color: wheat;
@@ -197,6 +176,7 @@ body{
     font-size: 15px;
 }
 
+/* Each recipeItem is assigned an id which will serve to display each recipe's unique image. Additionally, we tell the recipeItem not to repeat the image, even if there is white-space, and to fit the image in such a way that there it leaves no white space */
 #recipe_1{
     background: url(../images/recipes/raspberry.jpeg);
     background-repeat: no-repeat;
@@ -276,8 +256,4 @@ body{
     background: url(../images/recipes/coconut.png);
     background-repeat: no-repeat;
     background-size: cover;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 17b4945734062fe259ba39bf1edb1815451a5f76
