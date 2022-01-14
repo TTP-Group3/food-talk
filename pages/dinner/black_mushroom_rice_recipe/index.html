@@ -28,7 +28,8 @@
         <h1>Food Talk</h1>
       </div>
     </div> -->
-
+   <!-- This div below contains the ingredients need to replicate the dish or to make the dish.
+            -->
     <div class="food_container">
         <img class="black_mushroom_rice_img" style="margin-right: 250px;" src="imgs/black_mushroom_rice.jpg" alt="img">
         <div class="right-col">
@@ -47,7 +48,7 @@
         <span>&#8226;</span>1½ tablespoon Chicken Bouillon powder.<br>
         </p>
         </div>
-
+<!-- The code below will display a comment box and a button -->
         <div id="dialog" style="display: none;" class="comment_section">
           <input type="user_text" id="comment_box" placeholder="Enter comment">
           <button id="postBtn">Post</button>
@@ -61,12 +62,16 @@
     <div>
       <button id="tipsBtn" onclick="show_n_hide3()"class="tipsBtnDesign">Useful Tips</button>
     </div>
+         <!-- This div contains a recipe video the reader can follow along to replicate the dish
+            -->
     <div>
       <a href="https://www.youtube.com/watch?v=NPUPi8sq9Z4" target="_blank" rel="noopener noreferrer"><button id="videoBtn" class="videoBtnDesign">Watch Video</button></a>
     </div>
       <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
       <img id="comment" onclick="show_n_hide(); changeComment();" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
-    </div>
+    </div>    
+    <!-- This div contains the steps the user should follow to replicate the dish.
+            -->
     <div class="flex_container">
     <div id="steps" style="display: none;" class="steps_container">
       <h1>Steps</h1>
@@ -79,6 +84,8 @@
         <li>Step 7: Add mushroom water to pan. Add salt and pepper to taste if necessary. Once water starts to boil, add Rice.</li><br>
         <li>Step 8: Gently stir. Do not over stir. When water has almost evaporated and you only see the ingredients, lower heat and cover. Simmer for 15 to 20 minutes or until rice is fully cooked and still grainy</li><br>
       </p>
+         <!-- This div contains some useful tips about the dish the reader if they want could follow or not!
+            -->
     </div>
     <div id="tips" style="display: none;" class="tips_container">
       <h1>Useful Tips</h1>
